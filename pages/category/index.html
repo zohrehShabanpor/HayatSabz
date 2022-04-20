@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>حیـات سـبــز - دسته بندی</title>
+	<style>
+		header {
+			position: relative;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			height: 155px;
+			position: relative;
+			overflow-x: hidden !important;
+
+			padding: 0 65px 0 60px;
+
+			background-color: #ffffff;
+			box-shadow: 0 9px 34px rgba(0, 0, 0, 0.04);
+		}
+
+		body {
+			background-color: #FFFFFF !important;
+			font-weight: 300 !important;
+			direction: rtl !important;
+			margin: 0 !important;
+			overflow-x: hidden !important;
+			font-family: YekanBakh, serif !important;
+		}
+
+		main {
+			padding: 90px 65px 120px 65px;
+			position: relative;
+			/*overflow-x: hidden !important;*/
+		}
+
+		.header-container-1 {
+			display: flex;
+			align-items: center;
+			column-gap: 12px;
+		}
+
+		.header-container-2 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			width: 550px;
+
+			margin: 12px 0 0;
+			padding: 0;
+
+			list-style: none;
+			font-family: VazirFd, serif;
+			font-weight: 500;
+			font-size: 14px;
+		}
+
+		.header-container-3 {
+			display: flex;
+			column-gap: 25px;
+		}
+
+		.header-span-1 {
+			font-weight: 600;
+			font-size: 30px;
+
+			color: #222831;
+		}
+
+		.header-span-1 span {
+			color: #7BC74D;
+		}
+
+		.header-li a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			row-gap: 8px;
+
+			height: 100%;
+
+			color: #000000;
+			text-decoration: none;
+			cursor: pointer;
+			white-space: nowrap;
+		}
+
+		.header-li :hover {
+			color: #000000;
+		}
+
+		.li-active {
+			font-weight: 700;
+		}
+
+		.header-li-active-line {
+			width: 32px;
+			height: 2px;
+			background-color: #A3F571;
+			visibility: hidden;
+		}
+
+		.li-active .header-li-active-line {
+			visibility: visible;
+		}
+
+		.header-icon-1, .header-icon-2 {
+			cursor: pointer;
+			width: 23px;
+		}
+
+		.header-image {
+			width: 50px;
+			object-fit: contain;
+		}
+
+		.header-container-4, .design-image-9 {
+			display: none;
+		}
+
+		/*		First Section		*/
+
+		.first-section {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			row-gap: 75px;
+		}
+
+		.first-section-container-1 {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+
+			padding-left: 50px;
+		}
+
+		.first-section-container-2 {
+			width: 70%;
+
+			padding: 30px 40px 50px 40px;
+
+			background: #F1F1F1;
+			border-radius: 20px;
+		}
+
+		.first-section-container-3 {
+			margin-bottom: 70px;
+		}
+
+		.first-section-container-4 {
+			width: 100%;
+			text-align: center;
+		}
+
+		.first-section-container-5 {
+			display: inline-flex;
+			column-gap: 12px;
+		}
+
+		.first-section-title-1 {
+			font-weight: 950;
+			font-size: 32px;
+			color: #555555;
+		}
+
+		.first-section-span-2 {
+			background-color: #555555 !important;
+		}
+
+		.first-section-span-1 {
+			display: block;
+
+			font-weight: 700;
+			font-size: 16px;
+
+			color: #555555;
+
+		}
+
+		.first-section-span-2 img {
+			filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(102%) contrast(102%);
+
+			height: 18px;
+		}
+
+		.first-section-span-3, .first-section-span-2 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: 43px;
+			height: 43px;
+
+			font-family: VazirFd, serif;
+			font-weight: 900;
+			font-size: 16px;
+
+			cursor: pointer;
+			color: #222831;
+			border-radius: 30px;
+			background-color: #E7E7E7;
+		}
+
+		.first-section-span-4 {
+			display: inline-flex;
+			align-items: center;
+
+			width: 62px;
+			height: 30px;
+
+			padding: 0 5px;
+
+			background: #E7E7E7;
+			border-radius: 40px;
+		}
+
+		.first-section-span-5 {
+			width: 24px;
+			height: 24px;
+
+			cursor: pointer;
+			background: #ffffff;
+			border-radius: 50px;
+		}
+
+		.first-section-span-active {
+			background-color: #7BC74D;
+			color: #ffffff;
+		}
+
+		.first-section-item-container-1 {
+		}
+
+		.first-section-item-container-2 {
+			display: flex;
+			align-items: end;
+
+			height: 350px;
+			position: relative;
+			padding: 0 22px 17px 12px;
+			margin-bottom: 80px;
+
+			border-radius: 12px;
+			background-color: #555555;
+		}
+
+		.first-section-item-container-1:nth-last-child(6) .first-section-item-container-2,
+		.first-section-item-container-1:nth-last-child(5) .first-section-item-container-2,
+		.first-section-item-container-1:nth-last-child(4) .first-section-item-container-2 {
+			margin-bottom: 0;
+		}
+
+		.first-section-item-container-3 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			width: 100%;
+
+			color: #ffffff;
+		}
+
+		.first-section-item-span-1 {
+			font-family: VazirFd, serif;
+			font-weight: 900;
+			font-size: 20px;
+			white-space: nowrap;
+		}
+
+		.first-section-item-span-2 {
+			font-weight: 700;
+			font-size: 12px;
+		}
+
+		.first-section-item-button {
+			flex-grow: 0.7;
+			padding: 10px 0;
+
+			font-family: VazirFd, serif;
+			font-weight: 700;
+			font-size: 14px;
+			text-align: center;
+
+			border: none;
+			background: #7BC74D;
+			color: #ffffff;
+			border-radius: 8px;
+		}
+
+		.first-section-item-image {
+			height: 200px;
+		}
+
+		.first-section-item-container-4 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			width: 90%;
+			height: 300px;
+
+			position: absolute;
+			left: 5%;
+			top: -30px;
+
+			padding: 10px 12px;
+
+			object-fit: contain;
+			border-radius: 12px;
+			background-color: #ffffff;
+		}
+
+		.first-section-item-container-5 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			margin-top: 5px;
+			width: 100%;
+		}
+
+		.first-section-item-container-6 {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.first-section-item-span-3 {
+			font-family: VazirFd, serif;
+			font-weight: 900;
+			font-size: 16px;
+
+			color: #222831;
+		}
+
+		.first-section-item-span-4 {
+			font-family: VazirFd, serif;
+			font-weight: 500;
+			font-size: 12px;
+
+			margin-top: 5px;
+
+			color: #AEAEAE;
+		}
+
+		.first-section-item-image-3 {
+			margin-left: 10px;
+			filter: invert(10%) sepia(2%) saturate(367%) hue-rotate(133deg) brightness(16%) contrast(94%);
+		}
+
+		.first-section-item-image-2 {
+			width: 20px;
+			align-self: start;
+		}
+
+		.first-section-item-2-container, .first-section-item-3-container {
+			width: 100%;
+
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 20px;
+
+			margin-bottom: 30px;
+			padding: 20px 30px;
+
+			color: #222831;
+			background: #ffffff;
+			box-shadow: 0 13px 72px rgba(0, 0, 0, 0.07);
+			border-radius: 23px;
+		}
+
+		.first-section-item-2-container span img, .first-section-item-3-container span img {
+			margin-left: 10px;
+		}
+
+		.first-section-item-2-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.first-section-item-3-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.first-section-item-3-container-2 {
+			display: flex;
+			column-gap: 20px;
+		}
+
+		.first-section-item-3-header {
+			display: flex;
+			justify-content: space-between;
+
+			width: 100%;
+		}
+
+		.first-section-item-3-collapse {
+			margin-top: 20px;
+			padding: 30px 5px 10px;
+
+			font-family: Poppins, serif;
+			font-size: 14px;
+
+			color: #444444;
+			border-top: 0.5px solid rgba(200, 201, 204, 0.31);
+		}
+
+		.first-section-item-3-container:nth-last-child(2) .first-section-item-3-collapse,
+		.first-section-item-3-container:nth-last-child(1) .first-section-item-3-collapse {
+			font-family: VazirFd, serif;
+		}
+
+		.first-section-item-3-container:nth-last-child(2) .first-section-item-3-icon-3,
+		.first-section-item-3-container:nth-last-child(1) .first-section-item-3-icon-3 {
+			background-color: #FF3030;
+		}
+
+		.first-section-item-3-collapse ul {
+			list-style: none;
+			padding: 0;
+			margin-bottom: 50px;
+		}
+
+		.first-section-item-3-collapse li {
+			display: flex;
+			align-items: center;
+
+			column-gap: 10px;
+
+			margin-bottom: 22px;
+		}
+
+		.first-section-item-3-collapse li i {
+			font-size: 20px;
+			color: #E9E9E9;
+		}
+
+		.first-section-item-3-button {
+			padding: 6px 25px;
+
+			font-size: 14px;
+
+			position: relative;
+
+			color: #ffffff;
+			border: none;
+			background: #C9C9C9;
+			border-radius: 4px;
+		}
+
+		.first-section-item-3-icon-2 {
+			cursor: pointer;
+		}
+
+		.first-section-item-3-icon-3 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			position: absolute;
+			top: -5px;
+			right: -5px;
+			transform: rotate(45deg);
+
+			font-size: 10px;
+
+			width: 16px;
+			height: 16px;
+
+			background-color: #FFAD60;
+			border-radius: 20px;
+		}
+
+		/*		Mobile		*/
+		.first-section-container-6 img, .first-section-container-7, .header-icon-5 {
+			display: none;
+		}
+
+		@media screen and (max-width: 1400px) {
+			nav {
+				height: 145px;
+			}
+
+			/*		First Section		*/
+			.first-section-item-image {
+				width: fit-content;
+				height: 150px;
+				object-fit: contain;
+			}
+
+			.first-section-item-container-2 {
+				height: 280px;
+				margin-bottom: 80px;
+			}
+
+			.first-section-item-container-4 {
+				height: 240px;
+			}
+
+			.first-section-item-span-4 {
+				font-size: 11px;
+			}
+		}
+
+		@media screen and (max-width: 1200px) {
+			nav {
+				height: 135px;
+
+				padding: 0 68px;
+			}
+
+			.header-container-2 {
+				width: 500px;
+
+				font-size: 14px;
+			}
+
+			.header-container-3 {
+				column-gap: 20px;
+			}
+
+			.header-span-1 {
+				font-size: 16px;
+			}
+
+			.header-li-active-line {
+				width: 28px;
+			}
+
+			.header-icon-1, .header-icon-2 {
+				width: 20px;
+			}
+
+			.header-image {
+				width: 40px;
+			}
+
+			/*		First Section		*/
+			.first-section-container-1 {
+				padding-left: 30px;
+			}
+
+			.first-section-container-2 {
+				width: 60%;
+				flex-grow: 1;
+				padding: 30px 20px 40px;
+			}
+
+			.first-section-item-2-container, .first-section-item-3-container {
+				font-size: 16px;
+				margin-bottom: 20px;
+				padding: 15px 20px;
+			}
+
+			.first-section-item-image {
+				height: 120px;
+				object-fit: contain;
+			}
+
+			.first-section-item-image-2, .first-section-item-image-3 {
+				width: 15px;
+				margin: 0;
+			}
+
+			.first-section-item-container-1 {
+				padding: 0 7px !important;
+			}
+
+			.first-section-item-container-2 {
+				height: 230px;
+				margin-bottom: 80px;
+				padding: 0 12px 16px;
+			}
+
+			.first-section-item-container-4 {
+				height: 205px;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 13px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 8px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 14px;
+			}
+
+			.first-section-item-span-4 {
+				font-size: 9px;
+			}
+
+			.first-section-item-button {
+				padding: 6px 0;
+				font-size: 10px;
+			}
+		}
+
+		@media screen and (max-width: 992px) {
+			nav {
+				height: 120px;
+
+				padding: 0 44px 0 50px;
+			}
+
+			main {
+				padding: 60px 35px 70px 35px;
+			}
+
+			body {
+				background-color: #F7F7F7 !important;
+			}
+
+			.header-container-2 {
+				width: 400px;
+
+				font-size: 12px;
+			}
+
+			.header-span-1 {
+				font-size: 13px;
+			}
+
+			.li-active .header-li-active-line {
+				width: 20px;
+			}
+
+			.header-icon-1, .header-icon-2 {
+				width: 17px;
+			}
+
+			.header-image {
+				width: 30px;
+			}
+
+			/*		First Section		*/
+			.first-section-container-1 {
+				display: none;
+			}
+
+			.first-section-container-2 {
+				width: 100%;
+
+				padding: 30px 20px 50px 20px;
+			}
+
+			.first-section-container-6 {
+				display: flex;
+				justify-content: space-between;
+				align-items: start;
+			}
+
+			.first-section-container-6 img {
+				display: inline;
+				width: 25px;
+				margin-top: 3px;
+			}
+
+			.first-section-item-container-2 {
+				height: 230px;
+				padding: 0 12px 17px;
+				margin-bottom: 80px;
+				border-radius: 6px;
+			}
+
+			.first-section-item-container-3 {
+				column-gap: 5px;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 14px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 10px;
+			}
+
+			.first-section-item-button {
+				font-size: 10px;
+				flex-grow: 1;
+
+				padding: 7px 0;
+			}
+
+			.first-section-item-image {
+				height: 130px;
+
+				padding: 10px;
+
+				left: 7%;
+				top: -20px;
+
+				border-radius: 6px;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			nav {
+				height: 100px;
+
+				padding: 0 25px 0 30px;
+			}
+
+			main {
+				padding: 60px 25px 70px 25px;
+			}
+
+			.header-container-2 {
+				width: 300px;
+
+				font-size: 10px;
+			}
+
+			.header-span-1 {
+				font-size: 11px;
+			}
+
+			.header-icon-1, .header-icon-2 {
+				width: 14px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				row-gap: 50px;
+			}
+
+			.first-section-container-2 {
+				padding: 30px 10px 50px 10px;
+			}
+
+			.first-section-container-3 {
+				margin-bottom: 50px;
+			}
+
+			.first-section-title-1 {
+				font-size: 20px;
+			}
+
+			.first-section-span-1 {
+				font-size: 12px;
+			}
+
+			.first-section-span-3, .first-section-span-2 {
+				width: 30px;
+				height: 30px;
+				font-size: 10px;
+			}
+
+			.first-section-span-2 img {
+				height: 10px;
+			}
+
+
+			.first-section-item-container-2 {
+				height: 170px;
+
+				padding: 0 5px 10px;
+				margin-bottom: 60px;
+			}
+
+			.first-section-item-image-2, .first-section-item-image-3 {
+				width: 10px;
+			}
+
+			.first-section-item-container-4 {
+				height: 160px;
+				padding: 10px 6px;
+			}
+
+			.first-section-item-container-5 {
+				margin-top: 0;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 11px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 7px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 10px;
+			}
+
+			.first-section-item-span-4 {
+				font-size: 7px;
+			}
+
+			.first-section-item-button {
+				padding: 6px 0;
+				font-size: 7px;
+			}
+
+			.first-section-item-image {
+				height: 100px;
+			}
+		}
+
+		@media screen and (max-width: 576px) {
+			nav {
+				height: 80px;
+			}
+
+			.header-container-2 {
+				width: 240px;
+
+				font-size: 9px;
+			}
+
+			.header-container-3 {
+				column-gap: 10px;
+			}
+
+			.header-span-1 {
+				font-size: 10px;
+			}
+
+			.header-image {
+				width: 25px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				row-gap: 40px;
+			}
+
+			.first-section-container-2 {
+				padding: 20px 10px 30px 10px;
+			}
+
+			.first-section-container-6 img {
+				width: 15px;
+			}
+
+			.first-section-title-1 {
+				font-size: 18px;
+			}
+
+			.first-section-span-1 {
+				font-size: 10px;
+			}
+
+
+			.first-section-item-container-2 {
+				height: 130px;
+
+				padding: 0 5px 10px;
+				margin-bottom: 60px;
+			}
+
+			.first-section-item-image-2, .first-section-item-image-3 {
+				width: 9px;
+			}
+
+			.first-section-item-container-4 {
+				height: 125px;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 9px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 6px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 8px;
+			}
+
+			.first-section-item-span-4 {
+				font-size: 5px;
+			}
+
+			.first-section-item-button {
+				padding: 6px 0;
+				font-size: 6px;
+			}
+
+			.first-section-item-image {
+				height: 70px;
+				padding: 5px 0 0;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			nav {
+				height: 50px;
+
+				margin: 20px 15px 0;
+				padding: 10px 13px;
+
+				box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+				border-radius: 9px;
+			}
+
+			main {
+				padding: 50px 0 0;
+				overflow-x: hidden;
+			}
+
+			body {
+				background-color: #FFFFFF !important;
+			}
+
+			.header-container-1 {
+				flex-direction: row;
+				align-items: center;
+				column-gap: 7px;
+			}
+
+			.header-container-4 {
+				display: flex;
+				column-gap: 12px;
+			}
+
+			.header-span-1 {
+				margin: 0;
+				font-size: 14px;
+			}
+
+			.header-icon-3, .header-icon-4, .header-icon-5 {
+				width: 20px;
+			}
+
+			.header-icon-5 {
+				display: block;
+				margin-left: 15px;
+			}
+
+			.design-image-9 {
+				display: block;
+				position: absolute;
+				left: 0;
+				top: -30px;
+			}
+
+			.header-container-2, .header-container-3 {
+				display: none;
+			}
+
+			/*		First Section		*/
+			.first-section-container-2 {
+				padding: 0 20px 0;
+				background-color: #FFFFFF;
+				border-radius: 0;
+			}
+
+			.first-section-container-3 {
+				display: none;
+			}
+
+			.first-section-container-7 {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				padding: 0 25px;
+
+				width: 100%;
+				position: relative;
+			}
+
+			.first-section-container-8 {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.first-section-container-9 {
+				display: flex;
+				column-gap: 12px;
+			}
+
+			.first-section-container-9 img {
+				width: 18px;
+			}
+
+			.first-section-item-container-3 {
+				flex-direction: row-reverse;
+			}
+
+			.first-section-title-2 {
+				font-weight: 950;
+				font-size: 22px;
+
+				color: #222831;
+			}
+
+			.first-section-span-6 {
+				margin-top: -5px;
+
+				font-weight: 700;
+				font-size: 14px;
+
+				color: #9A9A9A;
+			}
+
+			.first-section-item-container-2 {
+				flex-direction: column;
+				height: fit-content;
+
+				padding: 7px 7px 12px;
+				margin-bottom: 15px;
+			}
+
+			.first-section-item-image-2, .first-section-item-image-3 {
+				width: 15px;
+			}
+
+			.first-section-item-container-4 {
+				height: fit-content;
+				width: 100%;
+				position: static;
+				padding: 10px 12px 25px;
+				margin-bottom: 20px;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 12px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 10px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 14px;
+			}
+
+			.first-section-item-span-4 {
+				font-size: 10px;
+			}
+
+			.first-section-item-button {
+				font-size: 10px;
+				border-radius: 35px;
+			}
+
+			.first-section-item-image {
+				height: 130px;
+				padding: 5px 0 0;
+				margin-bottom: 10px;
+			}
+
+			.first-section-span-2 {
+				background-color: #292D32 !important;
+			}
+
+			.first-section-span-active {
+				background-color: #A3F571;
+				color: #222831;
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			nav {
+				height: 45px;
+			}
+
+			main {
+				padding: 40px 0 0;
+				overflow-x: hidden;
+			}
+
+			.header-container-1 {
+				column-gap: 5px;
+			}
+
+			.header-container-4 {
+				column-gap: 10px;
+			}
+
+			.header-span-1 {
+				font-size: 12px;
+			}
+
+			.header-icon-3, .header-icon-4, .header-icon-5 {
+				width: 15px;
+			}
+
+			/*		First Section		*/
+			.first-section-container-2 {
+				padding: 0 20px 0;
+			}
+
+			.first-section-title-2 {
+				font-size: 18px;
+			}
+
+			.first-section-span-3, .first-section-span-2 {
+				width: 26px;
+				height: 26px;
+				font-size: 9px;
+			}
+
+			.first-section-span-6 {
+				font-size: 12px;
+			}
+
+			.first-section-item-container-4 {
+				margin-bottom: 10px;
+				padding-bottom: 15px;
+			}
+
+			.first-section-item-image-2, .first-section-item-image-3 {
+				width: 12px;
+			}
+
+			.first-section-item-span-1 {
+				font-size: 10px;
+			}
+
+			.first-section-item-span-2 {
+				font-size: 8px;
+			}
+
+			.first-section-item-span-3 {
+				font-size: 12px;
+			}
+
+			.first-section-item-span-4 {
+				font-size: 8px;
+			}
+
+			.first-section-item-button {
+				font-size: 9px;
+			}
+
+			.first-section-item-image {
+				height: 110px;
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+	<link rel="preload"
+		  href="../../src/font/fonts.css"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="preload"
+		  href="style.css"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="preload"
+		  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="prefetch"
+		  href="../../public/Logo.ico"
+		  sizes="32x32"
+		  onload="this.rel='icon'">
+	<link rel="prefetch"
+		  href="../../public/Logo.ico"
+		  sizes="32x32"
+		  onload="this.rel='apple-touch-icon'">
+</head>
+<body>
+<header>
+	<img class="design-image-9" src="../../src/assets/images/Rectangle%2022.png" alt=""/>
+	<nav id="nav">
+		<div class="header-container-1">
+			<img class="header-icon-5" src="../../src/assets/icons/mobile-Menu.svg" alt=""/>
+			<img class="header-image" src="../../src/assets/images/Layer-7.png" alt=""/>
+			<span class="header-span-1">
+			 حیـات <span>سـبــز</span>
+			</span>
+		</div>
+		<ul class="header-container-2">
+			<li class="header-li">
+				<a href="../../index.html">
+					صفحه اصلی
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+			<li class="header-li">
+				<a href="../product/index.html">
+					محصولات
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+			<li class="header-li li-active">
+				<a href="./index.html">
+					دسته بندی
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+			<li class="header-li">
+				<a>
+					درباره ما
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+			<li class="header-li">
+				<a>
+					تماس با ما
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+		</ul>
+		<div class="header-container-3">
+			<img class="header-icon-1" src="../../src/assets/icons/search-normal.svg" alt=""/>
+			<img class="header-icon-2" src="../../src/assets/icons/shopping-cart.svg" alt=""/>
+		</div>
+		<div class="header-container-4">
+			<img class="header-icon-3" src="../../src/assets/icons/mobiel-Search.svg" alt=""/>
+			<img class="header-icon-4" src="../../src/assets/icons/mobile-Shop.svg" alt=""/>
+		</div>
+	</nav>
+</header>
+<main>
+	<section class="first-section">
+		<div class="first-section-container-1">
+			<div class="first-section-item-2-container">
+				<span>
+					<img src="../../src/assets/icons/setting-4.svg" alt="">
+					فقط کالا های موجود
+				</span>
+				<span id="switch-1" class="first-section-span-4">
+					<span onclick="switchInput('switch-1')" class="first-section-span-5">
+					</span>
+				</span>
+			</div>
+			<div class="first-section-item-3-container">
+				<div class="first-section-item-3-header">
+					<span>
+						<img src="../../src/assets/icons/category.svg" alt="">
+						دسته بندی
+					</span>
+					<img src="../../src/assets/icons/arrow-down.svg" alt="" class="first-section-item-3-icon-2"
+						 data-bs-toggle="collapse" aria-expanded="false"
+						 aria-controls="category-1" data-bs-target="#category-1"/>
+				</div>
+				<div class="first-section-item-3-collapse collapse" id="category-1">
+					<ul>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							LOMVUM
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							LOMVUM
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							LOMVUM
+						</li>
+					</ul>
+					<div class="first-section-item-3-container-2">
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							LOMVUM
+						</button>
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							LOMVUM
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-3-container">
+				<div class="first-section-item-3-header">
+					<span>
+						<img src="../../src/assets/icons/category.svg" alt="">
+						دسته بندی
+					</span>
+					<img src="../../src/assets/icons/arrow-down.svg" alt="" class="first-section-item-3-icon-2"
+						 data-bs-toggle="collapse" aria-expanded="false"
+						 aria-controls="category-3" data-bs-target="#category-3"/>
+				</div>
+				<div class="first-section-item-3-collapse collapse" id="category-3">
+					<ul>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							کود معدنی
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							کود معدنی
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							کود معدنی
+						</li>
+					</ul>
+					<div class="first-section-item-3-container-2">
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							کود معدنی
+						</button>
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							کود معدنی
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-3-container">
+				<div class="first-section-item-3-header">
+					<span>
+						<img src="../../src/assets/icons/category.svg" alt="">
+						دسته بندی
+					</span>
+					<img src="../../src/assets/icons/arrow-down.svg" alt="" class="first-section-item-3-icon-2"
+						 data-bs-toggle="collapse" aria-expanded="false"
+						 aria-controls="category-4" data-bs-target="#category-4"/>
+				</div>
+				<div class="first-section-item-3-collapse collapse" id="category-4">
+					<ul>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							کود معدنی
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							کود معدنی
+						</li>
+						<li>
+							<i class="fas fa-solid fa-square"></i>
+							کود معدنی
+						</li>
+					</ul>
+					<div class="first-section-item-3-container-2">
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							کود معدنی
+						</button>
+						<button class="first-section-item-3-button">
+							<span class="first-section-item-3-icon-3">+</span>
+							کود معدنی
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="first-section-container-7">
+			<div class="first-section-container-8">
+				<span class="first-section-title-2">محصولات</span>
+				<span class="first-section-span-6">جدید ترین محصولات دسته بندی</span>
+			</div>
+			<div class="first-section-container-9">
+				<img src="../../src/assets/icons/setting-4.svg" alt="">
+				<img src="../../src/assets/icons/category.svg" alt="">
+			</div>
+		</div>
+		<div class="first-section-container-2 row gx-3 gx-lg-4">
+			<div class="first-section-container-3 col-12">
+				<div class="first-section-container-6">
+					<span class="first-section-title-1">محصولات</span>
+					<img src="../../src/assets/icons/menu.svg" alt=""/>
+				</div>
+				<span class="first-section-span-1">جدید ترین محصولات دسته بندی</span>
+			</div>
+
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="first-section-item-container-1 d-xs-none d-sm-block d-lg-none col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block d-lg-none col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="first-section-item-container-1 d-xs-none d-sm-block d-lg-none col-xs-6 col-3 col-lg-4">
+				<div class="first-section-item-container-2">
+					<div class="first-section-item-container-4">
+						<img class="first-section-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
+						<img class="first-section-item-image"
+							 src="../../src/assets/images/ascsaewf%201.png"
+							 alt=""/>
+						<div class="first-section-item-container-5">
+							<div class="first-section-item-container-6">
+								<span class="first-section-item-span-3">کود معدنی</span>
+								<span class="first-section-item-span-4">مخصوص گیاهان گلخانه ای</span>
+							</div>
+							<img class="first-section-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
+						</div>
+					</div>
+					<div class="first-section-item-container-3">
+					<span class="first-section-item-span-1">
+						250,000
+						<span class="first-section-item-span-2">
+							تومان
+						</span>
+					</span>
+						<button class="first-section-item-button">
+							خرید آنلاین
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="first-section-container-4">
+			<div class="first-section-container-5">
+				<span class="first-section-span-2">
+					<img style="transform: rotate(-180deg);" src="../../src/assets/icons/arrow-right.svg" alt="">
+				</span>
+				<span class="first-section-span-3">9</span>
+				<span class="first-section-span-3">3</span>
+				<span class="first-section-span-3 first-section-span-active">2</span>
+				<span class="first-section-span-3">1</span>
+				<span class="first-section-span-2">
+					<img src="../../src/assets/icons/arrow-right.svg" alt="">
+				</span>
+			</div>
+		</div>
+	</section>
+	<img class="design-image-13" src="../../src/assets/images/items%202.png" alt=""/>
+	<section class="second-section">
+		<img class="design-image-12" src="../../src/assets/images/Rectangle%2060.png" alt=""/>
+		<div class="second-section-container-1">
+			<span class="second-section-title-1">
+				توضیحـات کامـل دستـه بنـدی
+			</span>
+			<p class="second-section-paragraph-1">
+				افزارها شناختخصوص طراحان خلاقع با هدف بهبود ابزارهای کاربررصد گذشته حال و آینده، شناخت فراوان جامع طلبرم
+				ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+				بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلــــــی
+			</p>
+		</div>
+		<div class="second-section-container-2">
+			<span class="second-section-title-2">
+				ویژگی ها
+			</span>
+			<ul class="second-section-ul">
+				<li>
+					<i class="fas fa-solid fa-square"></i>
+					کود درجه یک
+				</li>
+				<li>
+					<i class="fas fa-solid fa-square"></i>
+					کود درجه یک
+				</li>
+				<li>
+					<i class="fas fa-solid fa-square"></i>
+					کود درجه یک
+				</li>
+				<li>
+					<i class="fas fa-solid fa-square"></i>
+					کود درجه یک
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
+<footer>
+	<div class="footer-container-1">
+		<span class="footer-title-1">
+			با خیال راحت خرید کنید
+		</span>
+		<div class="footer-container-2">
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="../../src/assets/icons/card-pos.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						روش پرداخت
+					</span>
+					<span class="footer-item-1-span-2">
+						کلیه کارت های شتاب
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="../../src/assets/icons/box-tick.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						پست رایگان
+					</span>
+					<span class="footer-item-1-span-2">
+						خرید بالای 100 هزار تومان
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="../../src/assets/icons/box-tick.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						پست رایگان
+					</span>
+					<span class="footer-item-1-span-2">
+						خرید بالای 100 هزار تومان
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="../../src/assets/icons/card-pos.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						روش پرداخت
+					</span>
+					<span class="footer-item-1-span-2">
+						کلیه کارت های شتاب
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-container-3">
+		<div class="footer-container-4">
+			<div class="footer-container-5">
+				<img class="footer-image-1" src="../../src/assets/images/Layer-7.png" alt=""/>
+				<div class="footer-container-6">
+					<span class="footer-title-2">
+						حیـات <span>سـبــز</span>
+					</span>
+					<span class="footer-title-3">
+					بزرگترین شرکت فروش کود در ایران
+					</span>
+				</div>
+			</div>
+			<div class="footer-container-7">
+				<span class="footer-span-1">
+					شیراز بعد از پل صنایع، شهرک باهنر کوچه 23 فروشگاه بزرگ ابزار پرو
+				</span>
+				<span class="footer-span-2">
+					تلفن تماس
+					<span class="footer-span-3">
+						4566 123 0917 - 2233 421 0713
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="footer-line-1"></div>
+		<div class="footer-container-8">
+			<div class="footer-container-9">
+				<div class="footer-item-2-container-1">
+					<span class="footer-item-2-title">
+						دسترسی سریع
+					</span>
+					<ul class="footer-item-2-ul">
+						<li class="footer-item-2-li">
+							تماس با ما
+						</li>
+						<li class="footer-item-2-li">
+							راهنمای خرید
+						</li>
+						<li class="footer-item-2-li">
+							پیگیری سفارش
+						</li>
+					</ul>
+				</div>
+				<div class="footer-item-2-container-1">
+					<span class="footer-item-2-title">
+						پرسش و پاسخ
+					</span>
+					<ul class="footer-item-2-ul">
+						<li class="footer-item-2-li">
+							تماس با ما
+						</li>
+						<li class="footer-item-2-li">
+							راهنمای خرید
+						</li>
+						<li class="footer-item-2-li">
+							پیگیری سفارش
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-line-1"></div>
+			<div class="footer-container-10">
+				<span class="footer-title-4">مجوز ها</span>
+				<span class="footer-span-4">نماد اعتماد و مجوز صنعت معدن</span>
+				<img class="footer-image-2" src="../../src/assets/images/logo-anjooman-senfi%201.png" alt="">
+				<img class="footer-image-2" src="../../src/assets/images/samandehi-for-poponik%201.png" alt="">
+				<img class="footer-image-2" src="../../src/assets/images/1-min-6-250x230%201.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="footer-container-11">
+		تمام حقوق متعلق به شرکت ابزار پرو میباشد
+	</div>
+</footer>
+<script rel="preload"
+		async
+		src="../../src/utility/breakpoints.js"></script>
+<script rel="preload"
+		async
+		src="script.js"></script>
+<script rel="preload"
+		async
+		src="../../src/js/script.js"></script>
+<script rel="preload"
+		async
+		crossorigin="anonymous"
+		src="https://kit.fontawesome.com/488d7f94e4.js"></script>
+<script rel="preload"
+		async
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

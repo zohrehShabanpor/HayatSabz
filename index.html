@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>حیـات سـبــز - خانه</title>
+	<style>
+		header {
+			position: relative;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			height: 155px;
+			position: relative;
+			overflow-x: hidden !important;
+
+			padding: 0 65px 0 60px;
+
+			background-color: #ffffff;
+			box-shadow: 0 9px 34px rgba(0, 0, 0, 0.04);
+		}
+
+		body {
+			background-color: #FFFFFF !important;
+			font-weight: 300 !important;
+			direction: rtl !important;
+			margin: 0 !important;
+			overflow-x: hidden !important;
+			font-family: YekanBakh, serif !important;
+		}
+
+		main {
+			padding: 90px 65px 120px 65px;
+			position: relative;
+			overflow-x: hidden;
+		}
+
+		footer {
+			overflow-x: hidden !important;
+
+		}
+
+		.header-container-1 {
+			display: flex;
+			align-items: center;
+			column-gap: 12px;
+		}
+
+		.header-container-2 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			width: 550px;
+
+			margin: 12px 0 0;
+			padding: 0;
+
+			list-style: none;
+			font-family: VazirFd, serif;
+			font-weight: 500;
+			font-size: 14px;
+		}
+
+		.header-container-3 {
+			display: flex;
+			column-gap: 25px;
+		}
+
+		.header-span-1 {
+			font-weight: 600;
+			font-size: 30px;
+
+			color: #222831;
+		}
+
+		.header-span-1 span {
+			color: #7BC74D;
+		}
+
+		.header-li a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			row-gap: 8px;
+
+			height: 100%;
+
+			color: #000000;
+			text-decoration: none;
+			cursor: pointer;
+			white-space: nowrap;
+		}
+
+		.header-li :hover {
+			color: #000000;
+		}
+
+		.li-active {
+			font-weight: 700;
+		}
+
+		.header-li-active-line {
+			width: 32px;
+			height: 2px;
+			background-color: #A3F571;
+			visibility: hidden;
+		}
+
+		.li-active .header-li-active-line {
+			visibility: visible;
+		}
+
+		.header-icon-1, .header-icon-2 {
+			cursor: pointer;
+			width: 23px;
+		}
+
+		.header-image {
+			width: 50px;
+			object-fit: contain;
+		}
+
+		.header-container-4, .design-image-9 {
+			display: none;
+		}
+
+		/*		First Section		*/
+
+		.first-section {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			height: 420px;
+			padding: 35px 0 0;
+			position: relative;
+
+			border-radius: 27px;
+			background-image: url("src/assets/images/Group 94.png");
+			background-repeat: round;
+		}
+
+		.first-section-container-1 {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			row-gap: 5px;
+
+			color: #ffffff;
+			z-index: 2;
+		}
+
+		.first-section-image-1 {
+			position: absolute;
+			object-fit: contain;
+			height: 420px;
+			margin-bottom: -20px;
+			z-index: 2;
+		}
+
+		.first-section-image-2 {
+			position: absolute;
+			object-fit: contain;
+			height: 350px;
+			top: calc(50% - 175px);
+			z-index: 1;
+		}
+
+		.first-section-image-3 {
+			position: absolute;
+			object-fit: fill;
+			z-index: -10;
+			top: 170px;
+			left: 40px;
+			width: 90%;
+			height: 300px;
+		}
+
+		.first-section-span-1 {
+			font-weight: 900;
+			font-size: 60px;
+		}
+
+		.first-section-span-1 span {
+			color: #7BC74D;
+		}
+
+		.first-section-span-2 {
+			font-weight: 600;
+			font-size: 40px;
+		}
+
+		.design-image-13 {
+			position: absolute;
+			bottom: 50px;
+			left: 0;
+			z-index: -100;
+		}
+
+		.design-image-14 {
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+			z-index: -100;
+			transform: matrix(-1, 0, 0, 1, 0, 0);
+		}
+
+		.design-image-12 {
+			position: absolute;
+			right: -65px;
+			z-index: -100;
+			top: 730px;
+		}
+
+		.design-image-17 {
+			position: absolute;
+			left: -65px;
+			z-index: -100;
+			top: 1570px;
+			transform: matrix(-1, 0, 0, 1, 0, 0) rotate(7deg);
+		}
+
+		.design-image-18 {
+			position: absolute;
+			right: -65px;
+			z-index: -100;
+			top: 3650px;
+		}
+
+		.first-section-image-4, .header-icon-5, .design-image-15, .design-image-19, .design-image-20, .design-image-16, .design-image-21 {
+			display: none;
+		}
+
+		@media screen and (max-width: 1400px) {
+			nav {
+				height: 145px;
+			}
+
+			.design-image-17 {
+				top: 1470px;
+			}
+
+			.design-image-18 {
+				top: 3380px;
+			}
+		}
+
+		@media screen and (max-width: 1200px) {
+			nav {
+				height: 135px;
+
+				padding: 0 68px;
+			}
+
+			.header-container-2 {
+				width: 500px;
+
+				font-size: 14px;
+			}
+
+			.header-container-3 {
+				column-gap: 20px;
+			}
+
+			.header-span-1 {
+				font-size: 16px;
+			}
+
+			.header-li-active-line {
+				width: 28px;
+			}
+
+			.header-icon-1, .header-icon-2 {
+				width: 20px;
+			}
+
+			.header-image {
+				width: 40px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				height: 380px;
+				padding: 15px 0 0;
+			}
+
+			.first-section-image-1 {
+				height: 370px;
+			}
+
+			.first-section-image-2 {
+				height: 320px;
+				top: calc(50% - 160px);
+			}
+
+			.first-section-image-3 {
+				top: 120px;
+				left: 40px;
+				width: 90%;
+				height: 300px;
+			}
+
+			.first-section-span-1 {
+				font-weight: 900;
+				font-size: 50px;
+			}
+
+			.first-section-span-2 {
+				font-weight: 600;
+				font-size: 30px;
+			}
+
+			.design-image-12 {
+				top: 730px;
+				height: 320px;
+			}
+
+			.design-image-17 {
+				top: 1470px;
+				height: 320px;
+			}
+
+			.design-image-18 {
+				top: 3220px;
+				height: 320px;
+			}
+		}
+
+		@media screen and (max-width: 992px) {
+			nav {
+				height: 120px;
+
+				padding: 0 44px 0 50px;
+			}
+
+			body {
+				background-color: #F7F7F7 !important;
+			}
+
+			.header-container-2 {
+				width: 400px;
+
+				font-size: 12px;
+			}
+
+			.header-span-1 {
+				font-size: 13px;
+			}
+
+			.li-active .header-li-active-line {
+				width: 20px;
+			}
+
+			.header-icon-1, .header-icon-2 {
+				width: 17px;
+			}
+
+			.header-image {
+				width: 30px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				height: 380px;
+				padding: 15px 0 0;
+			}
+
+			.first-section-image-1 {
+				height: 370px;
+			}
+
+			.first-section-image-2 {
+				height: 320px;
+				top: calc(50% - 160px);
+			}
+
+			.first-section-image-3 {
+				top: 120px;
+				left: 40px;
+				width: 90%;
+				height: 300px;
+			}
+
+			.first-section-span-1 {
+				font-weight: 900;
+				font-size: 50px;
+			}
+
+			.first-section-span-2 {
+				font-weight: 600;
+				font-size: 30px;
+			}
+
+			.design-image-15 {
+				display: block;
+				position: absolute;
+				z-index: -100;
+				right: -65px;
+				top: 650px;
+				height: 300px;
+			}
+
+			.design-image-19 {
+				display: block;
+				position: absolute;
+				z-index: -100;
+				left: -65px;
+				top: 1420px;
+				height: 300px;
+				transform: matrix(-1, 0, 0, 1, 0, 0) rotate(7deg)
+			}
+
+			.design-image-20 {
+				display: block;
+				position: absolute;
+				z-index: -100;
+				right: -65px;
+				top: 3000px;
+				height: 300px;
+			}
+
+			.design-image-21 {
+				display: block;
+				position: absolute;
+				right: 0;
+				width: 100%;
+				height: 400px;
+				object-fit: fill;
+				transform: matrix(-1, 0, 0, 1, 0, 0);
+				top: 1750px;
+				z-index: 100;
+			}
+
+			.design-image-12, .design-image-17, .design-image-18 {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			nav {
+				height: 100px;
+
+				padding: 0 25px 0 30px;
+			}
+
+			main {
+				padding: 60px 25px 70px 25px;
+			}
+
+			.header-container-2 {
+				width: 300px;
+
+				font-size: 10px;
+			}
+
+			.header-span-1 {
+				font-size: 11px;
+			}
+
+			.header-icon-1, .header-icon-2 {
+				width: 14px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				height: 300px;
+			}
+
+			.first-section-image-1 {
+				height: 300px;
+			}
+
+			.first-section-image-2 {
+				height: 250px;
+				top: calc(50% - 125px);
+			}
+
+			.first-section-image-3 {
+				height: 210px;
+			}
+
+			.first-section-span-1 {
+				font-size: 45px;
+			}
+
+			.first-section-span-2 {
+				font-size: 26px;
+			}
+
+			.design-image-15 {
+				height: 270px;
+				right: -50px;
+				top: 550px;
+			}
+
+			.design-image-19 {
+				left: -50px;
+				top: 1150px;
+				height: 270px;
+			}
+
+			.design-image-20 {
+				right: -50px;
+				top: 2530px;
+				height: 270px;
+			}
+
+			.design-image-21 {
+				top: 1450px;
+			}
+		}
+
+		@media screen and (max-width: 576px) {
+			nav {
+				height: 80px;
+			}
+
+			.header-container-2 {
+				width: 240px;
+
+				font-size: 9px;
+			}
+
+			.header-container-3 {
+				column-gap: 10px;
+			}
+
+			.header-span-1 {
+				font-size: 10px;
+			}
+
+			.header-image {
+				width: 25px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				height: 250px;
+			}
+
+			.first-section-image-1 {
+				height: 250px;
+			}
+
+			.first-section-image-2 {
+				height: 200px;
+				top: calc(50% - 100px);
+			}
+
+			.first-section-image-3 {
+				height: 150px;
+			}
+
+			.first-section-span-1 {
+				font-size: 40px;
+			}
+
+			.first-section-span-2 {
+				font-size: 22px;
+			}
+
+			.design-image-15 {
+				width: 80%;
+				top: 500px;
+				height: 220px;
+			}
+
+			.design-image-19 {
+				width: 80%;
+				height: 220px;
+				top: 1100px;
+			}
+
+			.design-image-20 {
+				width: 80%;
+				top: 2300px;
+				height: 220px;
+			}
+
+			.design-image-21 {
+				top: 1350px;
+				height: 300px;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			nav {
+				height: 50px;
+
+				margin: 20px 15px 0;
+				padding: 10px 13px;
+
+				box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+				border-radius: 9px;
+			}
+
+			body {
+				background-color: #FFFFFF !important;
+			}
+
+			main {
+				padding: 50px 0 0;
+				overflow-x: hidden;
+			}
+
+			.header-container-1 {
+				flex-direction: row;
+				align-items: center;
+				column-gap: 7px;
+			}
+
+			.header-container-4 {
+				display: flex;
+				column-gap: 12px;
+			}
+
+			.header-span-1 {
+				margin: 0;
+				font-size: 14px;
+			}
+
+			.header-icon-3, .header-icon-4, .header-icon-5 {
+				width: 20px;
+			}
+
+			.header-icon-5 {
+				display: block;
+				margin-left: 15px;
+			}
+
+			.design-image-9 {
+				display: block;
+				position: absolute;
+				left: 0;
+				top: -30px;
+			}
+
+			.header-container-2, .header-container-3 {
+				display: none;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				height: 230px;
+				border-radius: 0 0 0 40px;
+				background-color: #393E46;
+				background-image: url("src/assets/images/Group 70.png");
+			}
+
+			.first-section-image-1 {
+				display: none;
+			}
+
+			.first-section-image-2 {
+				display: none;
+			}
+
+			.first-section-image-3 {
+				display: none;
+			}
+
+			.first-section-image-4 {
+				display: block;
+				position: absolute;
+				z-index: -1;
+				bottom: -15px;
+				left: 0;
+			}
+
+			.first-section-span-1 {
+				font-size: 30px;
+			}
+
+			.first-section-span-2 {
+				font-size: 18px;
+			}
+
+			.design-image-16 {
+				display: block;
+				position: absolute;
+				top: 550px;
+				z-index: -1;
+				width: 100%;
+			}
+
+			.design-image-15, .design-image-19, .design-image-20, .design-image-21 {
+				display: none
+			}
+		}
+
+		@media screen and (max-width: 400px) {
+			nav {
+				height: 45px;
+			}
+
+			main {
+				padding: 40px 0 0;
+				overflow-x: hidden;
+			}
+
+			.header-container-1 {
+				column-gap: 5px;
+			}
+
+			.header-container-4 {
+				column-gap: 10px;
+			}
+
+			.header-span-1 {
+				font-size: 12px;
+			}
+
+			.header-icon-3, .header-icon-4, .header-icon-5 {
+				width: 15px;
+			}
+
+			/*		First Section		*/
+			.first-section {
+				height: 180px;
+			}
+
+			.first-section-image-4 {
+				height: 160px;
+			}
+
+			.first-section-span-1 {
+				font-size: 26px;
+			}
+
+			.first-section-span-2 {
+				font-size: 16px;
+			}
+		}
+
+		@media screen and (max-width: 320px) {
+
+			.first-section-span-1 {
+				font-size: 22px;
+			}
+
+			.first-section-span-2 {
+				font-size: 14px;
+			}
+		}
+	</style>
+	<link rel="preload"
+		  href="src/font/fonts.css"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="preload"
+		  href="style.css"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="preload"
+		  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+		  as="style"
+		  onload="this.rel='stylesheet'"/>
+	<link rel="prefetch"
+		  href="public/Logo.ico"
+		  sizes="32x32"
+		  onload="this.rel='icon'">
+	<link rel="prefetch"
+		  href="public/Logo.ico"
+		  sizes="32x32"
+		  onload="this.rel='apple-touch-icon'">
+</head>
+<body>
+<header>
+	<img class="design-image-9" src="src/assets/images/Rectangle%2022.png" alt=""/>
+	<nav id="nav">
+		<div class="header-container-1">
+			<img class="header-icon-5" src="src/assets/icons/mobile-Menu.svg" alt=""/>
+			<img class="header-image" src="src/assets/images/Layer-7.png" alt=""/>
+			<span class="header-span-1">
+			 حیـات <span>سـبــز</span>
+			</span>
+		</div>
+		<ul class="header-container-2">
+			<li class="header-li li-active">
+				<a href="index.html">
+					صفحه اصلی
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+			<li class="header-li">
+				<a href="pages/product/index.html">
+					محصولات
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+			<li class="header-li">
+				<a href="pages/category/index.html">
+					دسته بندی
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+			<li class="header-li">
+				<a>
+					درباره ما
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+			<li class="header-li">
+				<a>
+					تماس با ما
+					<div class="header-li-active-line"></div>
+				</a>
+			</li>
+		</ul>
+		<div class="header-container-3">
+			<img class="header-icon-1" src="src/assets/icons/search-normal.svg" alt=""/>
+			<img class="header-icon-2" src="src/assets/icons/shopping-cart.svg" alt=""/>
+		</div>
+		<div class="header-container-4">
+			<img class="header-icon-3" src="src/assets/icons/mobiel-Search.svg" alt=""/>
+			<img class="header-icon-4" src="src/assets/icons/mobile-Shop.svg" alt=""/>
+		</div>
+	</nav>
+</header>
+<main>
+	<img class="design-image-15" src="src/assets/images/Rectangle%2051.png"
+		 alt=""/>
+	<img class="design-image-19" src="src/assets/images/Rectangle%2051.png"
+		 alt=""/>
+	<img class="design-image-20" src="src/assets/images/Rectangle%2051.png"
+		 alt=""/>
+	<img class="design-image-21" src="src/assets/images/items%202.png"
+		 alt=""/>
+	<img class="design-image-12" src="src/assets/images/Rectangle%2050.png"
+		 alt=""/>
+	<img class="design-image-17" src="src/assets/images/Rectangle%2050.png"
+		 alt=""/>
+	<img class="design-image-18" src="src/assets/images/Rectangle%2050.png"
+		 alt=""/>
+	<section class="first-section">
+		<img class="first-section-image-1" src="src/assets/images/25-253722_object-plant-1-plant-top-view-png%201.png"
+			 alt=""/>
+		<img class="first-section-image-2" src="src/assets/images/Rectangle%2049.png"
+			 alt=""/>
+		<img class="first-section-image-3" src="src/assets/images/Rectangle%2017.png"
+			 alt=""/>
+		<img class="first-section-image-4" src="src/assets/images/Rectangle%2018.png"
+			 alt=""/>
+		<div class="first-section-container-1">
+			<span class="first-section-span-1">شرکت حیات <span>سبز</span></span>
+			<span class="first-section-span-2">بزرگترین شرکت فروش کود در ایران</span>
+		</div>
+	</section>
+	<section class="second-section">
+		<div class="second-section-container-16">
+			<div class="second-section-container-17">
+				<span class="second-section-title-1">شگفت انگیز شوید !</span>
+				<span class="second-section-span-1">فقط تا پایان امروز فرصت باقیست</span>
+			</div>
+			<div class="second-section-container-18">
+				<img class="slider-first-button" src="src/assets/icons/arrow-right.svg" alt="">
+				<img class="slider-second-button" src="src/assets/icons/arrow-right.svg" alt="">
+			</div>
+		</div>
+		<div class="second-section-container-1">
+			<img class="slider-first-button" src="src/assets/icons/arrow-right.svg" alt="">
+			<img class="slider-second-button" src="src/assets/icons/arrow-right.svg" alt="">
+		</div>
+		<div class="second-section-container-2">
+			<div class="second-section-container-3">
+				<div class="second-section-container-4">
+					<div class="second-section-container-5">
+						<span class="second-section-title-1">شگفت انگیز شوید !</span>
+						<span class="second-section-span-1">فقط تا پایان امروز فرصت باقیست</span>
+					</div>
+					<button class="second-section-button-1">50%</button>
+					<div class="second-section-container-6">
+						<button class="second-section-button-3">50%</button>
+						<div class="second-section-container-13">
+							<div class="second-section-item-container">
+								<span class="second-section-item-span-1">47</span>
+								<span class="second-section-item-span-2">ثانیه</span>
+							</div>
+							<div class="second-section-item-container">
+								<span class="second-section-item-span-1">27</span>
+								<span class="second-section-item-span-2">دقیقه</span>
+							</div>
+							<div class="second-section-item-container">
+								<span class="second-section-item-span-1">12</span>
+								<span class="second-section-item-span-2">ساعت</span>
+							</div>
+							<div class="second-section-item-container">
+								<span class="second-section-item-span-1">02</span>
+								<span class="second-section-item-span-2">روز</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="second-section-container-7">
+				<div class="second-section-container-9">
+					<div class="second-section-container-10">
+						<span class="second-section-title-2">
+									کود معدنی
+								</span>
+						<span class="second-section-title-3">
+								مخصوص گیاهان گلخانه ای
+						</span>
+						<span class="second-section-paragraph">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+							استفاده از طراحان گرافیک است، چاپگرها و متون 	بلکه روزنامه و مجله در
+							ستون و سطرآنچنان که لازم است
+						</span>
+					</div>
+					<div class="second-section-container-11">
+						<div class="second-section-container-12">
+									<span class="second-section-span-2">
+										250,000
+									</span>
+							<span class="second-section-span-3">
+										199,000
+										<span class="second-section-span-4">
+											تومان
+										</span>
+									</span>
+						</div>
+						<button class="second-section-button-2">
+							خرید آنلاین
+							<img alt="" src="src/assets/icons/Vector.svg">
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="second-section-image-1">
+				<img src="src/assets/images/Group%2035.png" alt=""/>
+				<div class="second-section-container-14">
+					<i class="fas fa-circle"></i>
+					<i class="fas fa-circle active-icon"></i>
+					<i class="fas fa-circle"></i>
+					<i class="fas fa-circle"></i>
+				</div>
+			</div>
+		</div>
+		<div class="second-section-container-15">
+			<i class="fas fa-circle"></i>
+			<i class="fas fa-circle active-icon"></i>
+			<i class="fas fa-circle"></i>
+			<i class="fas fa-circle"></i>
+		</div>
+	</section>
+	<section class="third-section">
+		<img class="design-image-16" src="src/assets/images/Rectangle%2013.png"
+			 alt=""/>
+		<div class="global-1-container-1">
+			<span class="global-1-title-1">پرفروش ترین محصولات</span>
+			<div>
+				<img class="slider-first-button" src="src/assets/icons/arrow-right.svg" alt="">
+				<img class="slider-second-button" src="src/assets/icons/arrow-right.svg" alt="">
+			</div>
+		</div>
+		<div class="global-1-container-2">
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+						<span class="global-1-item-span-1">
+							250,000
+							<span class="global-1-item-span-2">
+								تومان
+							</span>
+						</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+						<span class="global-1-item-span-1">
+							250,000
+							<span class="global-1-item-span-2">
+								تومان
+							</span>
+						</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+						<span class="global-1-item-span-1">
+							250,000
+							<span class="global-1-item-span-2">
+								تومان
+							</span>
+						</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+						<span class="global-1-item-span-1">
+							250,000
+							<span class="global-1-item-span-2">
+								تومان
+							</span>
+						</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="forth-section">
+		<img class="forth-section-image-1" src="src/assets/images/Rectangle%2017.png"
+			 alt=""/>
+		<img class="forth-section-image-2" src="src/assets/images/Rectangle%2027.png"
+			 alt=""/>
+		<span class="forth-section-span-1">توضیحات بنـــــــــر</span>
+	</section>
+	<section class="eighth-section">
+		<div class="global-1-container-1">
+			<span class="global-1-title-1">دسته بندی کود</span>
+			<div>
+				<img class="slider-first-button" src="src/assets/icons/arrow-right.svg" alt="">
+				<img class="slider-second-button" src="src/assets/icons/arrow-right.svg" alt="">
+			</div>
+		</div>
+		<div class="global-1-container-2">
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+					<span class="global-1-item-span-1">
+						250,000
+						<span class="global-1-item-span-2">
+							تومان
+						</span>
+					</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+					<span class="global-1-item-span-1">
+						250,000
+						<span class="global-1-item-span-2">
+							تومان
+						</span>
+					</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+					<span class="global-1-item-span-1">
+						250,000
+						<span class="global-1-item-span-2">
+							تومان
+						</span>
+					</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+					<span class="global-1-item-span-1">
+						250,000
+						<span class="global-1-item-span-2">
+							تومان
+						</span>
+					</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="fifth-section">
+		<div class="global-1-container-1">
+			<span class="global-1-title-1">دسته بندی کود</span>
+			<div>
+				<img class="slider-first-button" src="src/assets/icons/arrow-right.svg" alt="">
+				<img class="slider-second-button" src="src/assets/icons/arrow-right.svg" alt="">
+			</div>
+		</div>
+		<div class="global-1-container-2">
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+						<span class="global-1-item-span-1">
+							250,000
+							<span class="global-1-item-span-2">
+								تومان
+							</span>
+						</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+						<span class="global-1-item-span-1">
+							250,000
+							<span class="global-1-item-span-2">
+								تومان
+							</span>
+						</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+						<span class="global-1-item-span-1">
+							250,000
+							<span class="global-1-item-span-2">
+								تومان
+							</span>
+						</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+						<span class="global-1-item-span-1">
+							250,000
+							<span class="global-1-item-span-2">
+								تومان
+							</span>
+						</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sixth-section">
+		<div class="global-1-container-1">
+			<span class="global-1-title-1">دسته بندی کود</span>
+			<div>
+				<img class="slider-first-button" src="src/assets/icons/arrow-right.svg" alt="">
+				<img class="slider-second-button" src="src/assets/icons/arrow-right.svg" alt="">
+			</div>
+		</div>
+		<div class="global-1-container-2">
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+					<span class="global-1-item-span-1">
+						250,000
+						<span class="global-1-item-span-2">
+							تومان
+						</span>
+					</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+					<span class="global-1-item-span-1">
+						250,000
+						<span class="global-1-item-span-2">
+							تومان
+						</span>
+					</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+					<span class="global-1-item-span-1">
+						250,000
+						<span class="global-1-item-span-2">
+							تومان
+						</span>
+					</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+			<div class="global-1-item-container-1">
+				<div class="global-1-item-container-3">
+					<img class="global-1-item-image-2" src="src/assets/icons/archive-tick.svg" alt="">
+					<img class="global-1-item-image-1"
+						 src="src/assets/images/ascsaewf%201.png"
+						 alt=""/>
+					<div class="global-1-item-container-4">
+						<div class="global-1-item-container-5">
+							<span class="global-1-item-span-3">کود معدنی</span>
+							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
+						</div>
+						<img class="global-1-item-image-3" src="src/assets/icons/heart.svg" alt="">
+					</div>
+				</div>
+				<div class="global-1-item-container-2">
+					<span class="global-1-item-span-1">
+						250,000
+						<span class="global-1-item-span-2">
+							تومان
+						</span>
+					</span>
+					<button class="global-1-item-button">
+						خرید آنلاین
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="seventh-section">
+		<div class="seventh-section-container-1">
+			<span class="seventh-section-title-1">اخبـار و مقالات</span>
+			<div>
+				<img class="slider-first-button" src="src/assets/icons/arrow-right.svg" alt="">
+				<img class="slider-second-button" src="src/assets/icons/arrow-right.svg" alt="">
+			</div>
+		</div>
+		<div class="seventh-section-container-2">
+			<div class="seventh-section-item-container-1">
+				<div class="seventh-section-item-container-3">
+					<img class="seventh-section-item-image" src="src/assets/images/Rectangle%2034.png" alt="">
+					<img class="seventh-section-item-image-2" src="src/assets/images/Vector10.png" alt="">
+					<img class="seventh-section-item-image-3" src="src/assets/images/Vector%208.png" alt="">
+				</div>
+				<div class="seventh-section-item-container-2">
+						<span class="seventh-section-item-title">
+						عنوان مقاله
+					</span>
+					<p class="seventh-section-item-paragraph">
+						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+						استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+						در ستون و سطرآنچنان که لازم است
+					</p>
+					<button class="seventh-section-item-button">
+						اطلاعات بیشتر
+						<img alt="" src="src/assets/icons/Vector.svg">
+					</button>
+				</div>
+			</div>
+			<div class="seventh-section-item-container-1">
+				<div class="seventh-section-item-container-3">
+					<img class="seventh-section-item-image" src="src/assets/images/Rectangle%2034.png" alt="">
+					<img class="seventh-section-item-image-2" src="src/assets/images/Vector10.png" alt="">
+					<img class="seventh-section-item-image-3" src="src/assets/images/Vector%208.png" alt="">
+				</div>
+				<div class="seventh-section-item-container-2">
+						<span class="seventh-section-item-title">
+						عنوان مقاله
+					</span>
+					<p class="seventh-section-item-paragraph">
+						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+						استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+						در ستون و سطرآنچنان که لازم است
+					</p>
+					<button class="seventh-section-item-button">
+						اطلاعات بیشتر
+						<img alt="" src="src/assets/icons/Vector.svg">
+					</button>
+				</div>
+			</div>
+			<div class="seventh-section-item-container-1">
+				<div class="seventh-section-item-container-3">
+					<img class="seventh-section-item-image" src="src/assets/images/Rectangle%2034.png" alt="">
+					<img class="seventh-section-item-image-2" src="src/assets/images/Vector10.png" alt="">
+					<img class="seventh-section-item-image-3" src="src/assets/images/Vector%208.png" alt="">
+				</div>
+				<div class="seventh-section-item-container-2">
+						<span class="seventh-section-item-title">
+						عنوان مقاله
+					</span>
+					<p class="seventh-section-item-paragraph">
+						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+						استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
+						در ستون و سطرآنچنان که لازم است
+					</p>
+					<button class="seventh-section-item-button">
+						اطلاعات بیشتر
+						<img alt="" src="src/assets/icons/Vector.svg">
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>
+	<img class="design-image-13" src="src/assets/images/items%203.png" alt=""/>
+	<img class="design-image-14" src="src/assets/images/items%203.png" alt=""/>
+	<div class="footer-container-1">
+		<span class="footer-title-1">
+			با خیال راحت خرید کنید
+		</span>
+		<div class="footer-container-2">
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="src/assets/icons/card-pos.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						روش پرداخت
+					</span>
+					<span class="footer-item-1-span-2">
+						کلیه کارت های شتاب
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="src/assets/icons/box-tick.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						پست رایگان
+					</span>
+					<span class="footer-item-1-span-2">
+						خرید بالای 100 هزار تومان
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="src/assets/icons/box-tick.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						پست رایگان
+					</span>
+					<span class="footer-item-1-span-2">
+						خرید بالای 100 هزار تومان
+					</span>
+				</div>
+			</div>
+			<div class="footer-item-1-container-1">
+				<img class="footer-item-1-icon" src="src/assets/icons/card-pos.svg" alt="">
+				<div class="footer-item-1-container-2">
+					<span class="footer-item-1-span-1">
+						روش پرداخت
+					</span>
+					<span class="footer-item-1-span-2">
+						کلیه کارت های شتاب
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-container-3">
+		<div class="footer-container-4">
+			<div class="footer-container-5">
+				<img class="footer-image-1" src="src/assets/images/Layer-7.png" alt=""/>
+				<div class="footer-container-6">
+					<span class="footer-title-2">
+						حیـات <span>سـبــز</span>
+					</span>
+					<span class="footer-title-3">
+					بزرگترین شرکت فروش کود در ایران
+					</span>
+				</div>
+			</div>
+			<div class="footer-container-7">
+				<span class="footer-span-1">
+					شیراز بعد از پل صنایع، شهرک باهنر کوچه 23 فروشگاه بزرگ ابزار پرو
+				</span>
+				<span class="footer-span-2">
+					تلفن تماس
+					<span class="footer-span-3">
+						4566 123 0917 - 2233 421 0713
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="footer-line-1"></div>
+		<div class="footer-container-8">
+			<div class="footer-container-9">
+				<div class="footer-item-2-container-1">
+					<span class="footer-item-2-title">
+						دسترسی سریع
+					</span>
+					<ul class="footer-item-2-ul">
+						<li class="footer-item-2-li">
+							تماس با ما
+						</li>
+						<li class="footer-item-2-li">
+							راهنمای خرید
+						</li>
+						<li class="footer-item-2-li">
+							پیگیری سفارش
+						</li>
+					</ul>
+				</div>
+				<div class="footer-item-2-container-1">
+					<span class="footer-item-2-title">
+						پرسش و پاسخ
+					</span>
+					<ul class="footer-item-2-ul">
+						<li class="footer-item-2-li">
+							تماس با ما
+						</li>
+						<li class="footer-item-2-li">
+							راهنمای خرید
+						</li>
+						<li class="footer-item-2-li">
+							پیگیری سفارش
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-line-1"></div>
+			<div class="footer-container-10">
+				<span class="footer-title-4">مجوز ها</span>
+				<span class="footer-span-4">نماد اعتماد و مجوز صنعت معدن</span>
+				<img class="footer-image-2" src="src/assets/images/logo-anjooman-senfi%201.png" alt="">
+				<img class="footer-image-2" src="src/assets/images/samandehi-for-poponik%201.png" alt="">
+				<img class="footer-image-2" src="src/assets/images/1-min-6-250x230%201.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="footer-container-11">
+		تمام حقوق متعلق به شرکت ابزار پرو میباشد
+	</div>
+</footer>
+<script rel="preload"
+		async
+		src="https://kit.fontawesome.com/488d7f94e4.js"
+		crossorigin="anonymous"></script>
+<script rel="preload"
+		async
+		src="src/utility/breakpoints.js"></script>
+<script rel="preload"
+		async
+		src="script.js"></script>
+<script rel="preload"
+		async
+		src="src/js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
