@@ -243,8 +243,11 @@
 
       .first-section-item-container-2 {
         display: flex;
-        flex-direction: column;
-        padding: 20px;
+        align-items: end;
+
+        height: 350px;
+        position: relative;
+        padding: 0 22px 17px 12px;
         margin-bottom: 80px;
 
         border-radius: 12px;
@@ -261,10 +264,12 @@
       }
 
       .first-section-item-container-3 {
-        text-align: center;
-        padding: 30px 0 13px;
-        font-weight: 600;
-        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
         color: #ffffff;
       }
 
@@ -296,12 +301,22 @@
       }
 
       .first-section-item-image {
-        width: 100%;
+        height: 200px;
       }
 
       .first-section-item-container-4 {
-        padding: 20px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 90%;
+        height: 300px;
+
+        position: absolute;
+        left: 5%;
+        top: -30px;
+
+        padding: 10px 12px;
 
         object-fit: contain;
         border-radius: 12px;
@@ -508,15 +523,18 @@
 
         /*		First Section		*/
         .first-section-item-image {
+          width: fit-content;
+          height: 150px;
           object-fit: contain;
         }
 
         .first-section-item-container-2 {
-          /* height: 280px; */
+          height: 280px;
           margin-bottom: 80px;
         }
 
         .first-section-item-container-4 {
+          height: 240px;
         }
 
         .first-section-item-span-4 {
@@ -577,6 +595,7 @@
         }
 
         .first-section-item-image {
+          height: 120px;
           object-fit: contain;
         }
 
@@ -591,10 +610,13 @@
         }
 
         .first-section-item-container-2 {
-          margin-bottom: 50px;
+          height: 230px;
+          margin-bottom: 80px;
+          padding: 0 12px 16px;
         }
 
         .first-section-item-container-4 {
+          height: 205px;
         }
 
         .first-section-item-span-1 {
@@ -681,8 +703,9 @@
         }
 
         .first-section-item-container-2 {
-          padding: 16px;
-          margin-bottom: 40px;
+          height: 230px;
+          padding: 0 12px 17px;
+          margin-bottom: 80px;
           border-radius: 6px;
         }
 
@@ -706,7 +729,12 @@
         }
 
         .first-section-item-image {
-          padding: 0;
+          height: 130px;
+
+          padding: 10px;
+
+          left: 7%;
+          top: -20px;
 
           border-radius: 6px;
         }
@@ -779,7 +807,10 @@
         }
 
         .first-section-item-container-2 {
-          margin-bottom: 30px;
+          height: 170px;
+
+          padding: 0 5px 10px;
+          margin-bottom: 60px;
         }
 
         .first-section-item-image-2,
@@ -788,7 +819,8 @@
         }
 
         .first-section-item-container-4 {
-          padding: 6px;
+          height: 160px;
+          padding: 10px 6px;
         }
 
         .first-section-item-container-5 {
@@ -866,6 +898,9 @@
         }
 
         .first-section-item-container-2 {
+          height: 130px;
+
+          padding: 0 5px 10px;
           margin-bottom: 60px;
         }
 
@@ -1263,13 +1298,12 @@
             src="../../src/assets/icons/search-normal.svg"
             alt=""
           />
-          <a href="../cart/index.html">
-            <img
+          <a href="../cart/index.html"
+            ><img
               class="header-icon-2"
               src="../../src/assets/icons/shopping-cart.svg"
               alt=""
-            />
-          </a>
+          /></a>
         </div>
         <div class="header-container-4">
           <img
@@ -1514,7 +1548,7 @@
         </div>
         <div class="first-section-container-7">
           <div class="first-section-container-8">
-            <span class="first-section-title-2">دسته بندی محصولات</span>
+            <span class="first-section-title-2">محصولات</span>
             <span class="first-section-span-6"
               >جدید ترین محصولات دسته بندی</span
             >
@@ -1527,7 +1561,7 @@
         <div class="first-section-container-2 row gx-3 gx-lg-4">
           <div class="first-section-container-3 col-12">
             <div class="first-section-container-6">
-              <span class="first-section-title-1">دسته بندی محصولات</span>
+              <span class="first-section-title-1">محصولات</span>
               <img src="../../src/assets/icons/menu.svg" alt="" />
             </div>
             <span class="first-section-span-1"
@@ -1539,12 +1573,36 @@
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
 
@@ -1552,60 +1610,180 @@
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
           <div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
           <div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
           <div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
           <div class="first-section-item-container-1 col-xs-6 col-3 col-lg-4">
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
 
@@ -1615,12 +1793,36 @@
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
           <div
@@ -1629,12 +1831,36 @@
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
           <div
@@ -1643,12 +1869,36 @@
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
 
@@ -1658,12 +1908,36 @@
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
           <div
@@ -1672,12 +1946,36 @@
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
           <div
@@ -1686,12 +1984,36 @@
             <div class="first-section-item-container-2">
               <div class="first-section-item-container-4">
                 <img
+                  class="first-section-item-image-2"
+                  src="../../src/assets/icons/archive-tick.svg"
+                  alt=""
+                />
+                <img
                   class="first-section-item-image"
                   src="../../src/assets/images/ascsaewf%201.png"
                   alt=""
                 />
+                <div class="first-section-item-container-5">
+                  <div class="first-section-item-container-6">
+                    <span class="first-section-item-span-3">کود معدنی</span>
+                    <span class="first-section-item-span-4"
+                      >مخصوص گیاهان گلخانه ای</span
+                    >
+                  </div>
+                  <img
+                    class="first-section-item-image-3"
+                    src="../../src/assets/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="first-section-item-container-3">نام دسته بندی</div>
+              <div class="first-section-item-container-3">
+                <span class="first-section-item-span-1">
+                  250,000
+                  <span class="first-section-item-span-2"> تومان </span>
+                </span>
+                <button class="first-section-item-button">خرید آنلاین</button>
+              </div>
             </div>
           </div>
         </div>

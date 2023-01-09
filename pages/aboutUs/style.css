@@ -1,0 +1,260 @@
+@import "../../src/utility/pallete.css";
+@import "../../src/css/elements.css";
+@import "../../src/css/global.css";
+@import "../../src/css/footer.css";
+
+.second-section {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	position: relative;
+	margin: 0 65px 0;
+	padding: 65px 80px 100px;
+	background-color: var(--white1);
+	box-shadow: 0 13px 72px rgba(0, 0, 0, 0.07);
+	border-radius: 23px
+}
+
+.second-section-container-1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+}
+
+.second-section-container-2 {
+	display: flex;
+	column-gap: 50px
+}
+
+.second-section-title-1 {
+	font-weight: 900;
+	font-size: 20px;
+	color: var(--black2)
+}
+
+.second-section-span-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: VazirFd, serif;
+	font-weight: 700;
+	font-size: 16px;
+	cursor: pointer;
+	color: var(--black2)
+}
+
+.second-section-span-active {
+	color: var(--green1)
+}
+
+.second-section-span-active .second-section-span-active-line {
+	visibility: visible
+}
+
+.second-section-span-active-line {
+	display: block;
+	width: 90%;
+	height: 2px;
+	margin-top: 7px;
+	visibility: hidden;
+	background-color: var(--green1)
+}
+
+.second-section-paragraph-1 {
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 65px;
+	text-align: justify-all;
+	color: var(--gray1)
+}
+
+.second-section-image-1 {
+	position: absolute;
+	z-index: -100;
+	bottom: -80px;
+	width: 90%;
+	right: 30px;
+	max-height: 100%
+}
+
+.second-section-button {
+	padding: 14px 55px;
+	font-family: VazirFd, serif;
+	font-weight: 700;
+	font-size: 14px;
+	border: none;
+	color: #ffffff;
+	background: #7BC74D;
+	border-radius: 12px;
+}
+
+.second-section-title-2, .second-section-button-2 {
+	display: none;
+}
+
+@media screen and (max-width: 1400px) {
+	.second-section-title-1 {
+		font-size: 26px
+	}
+
+	.second-section-span-1 {
+		font-size: 15px
+	}
+
+	.second-section-paragraph-1 {
+		font-size: 18px;
+		line-height: 62px
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.second-section {
+		margin: 0 40px 0;
+	}
+
+	.second-section-span-1 {
+		font-size: 14px
+	}
+
+	.second-section-title-1 {
+		font-size: 24px
+	}
+
+	.second-section-title-1 span {
+		color: #7BC74D;
+	}
+
+	.second-section-paragraph-1 {
+		font-size: 16px;
+		line-height: 55px
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.second-section {
+		margin: 0 20px 0;
+		padding: 50px 40px 80px;
+	}
+
+	.second-section-span-1 {
+		font-size: 10px
+	}
+
+	.second-section-title-1 {
+		font-size: 18px
+	}
+
+	.second-section-paragraph-1 {
+		font-size: 14px;
+		line-height: 40px
+	}
+
+	.second-section-container-2 {
+		column-gap: 30px
+	}
+
+	.second-section-button {
+		padding: 12px 40px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.second-section {
+		padding: 45px 30px 50px
+	}
+
+	.second-section-span-1 {
+		font-size: 9px
+	}
+
+	.second-section-title-1, .third-section-title-1 {
+		font-size: 16px
+	}
+
+	.second-section-paragraph-1 {
+		font-size: 12px;
+		line-height: 35px
+	}
+
+	.second-section-container-2 {
+		column-gap: 20px
+	}
+
+	.second-section-button {
+		padding: 8px 26px;
+		font-size: 12px;
+		border-radius: 8px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.second-section {
+		padding: 24px 22px 40px;
+		margin-bottom: 40px;
+	}
+
+	.second-section-container-2 {
+		display: none
+	}
+
+	.second-section-title-1 {
+		font-size: 22px;
+		font-weight: 700;
+		color: #292D32;
+		width: 100%;
+		text-align: center;
+		padding-top: 40px;
+		border-top: 2px dashed #EBEBEB;;
+	}
+
+	.second-section-container-1 {
+		justify-content: center;
+		flex-direction: column;
+		row-gap: 22px;
+	}
+
+	.second-section-paragraph-1 {
+		font-size: 14px;
+		line-height: 35px;
+		font-weight: 600;
+		color: #374957;
+	}
+
+	.second-section-container-3 {
+		display: flex !important;
+		flex-direction: column;
+		row-gap: 15px
+	}
+
+	.second-section-image-1 {
+		display: none;
+	}
+
+	.second-section-button {
+		display: none;
+	}
+
+	.second-section-title-2 {
+		display: block;
+		font-size: 22px;
+		font-weight: 700;
+		color: #292D32;
+	}
+
+	.second-section-button-2 {
+		display: block;
+		padding: 12px 0;
+		font-family: VazirFd, serif;
+		font-weight: 700;
+		font-size: 16px;
+		border: none;
+		color: #ffffff;
+		background: #7BC74D;
+		border-radius: 12px;
+	}
+
+	.second-section-title-1 span:first-child {
+		display: none;
+	}
+}

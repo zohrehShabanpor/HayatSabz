@@ -1,5 +1,5 @@
 footer {
-	position: relative;
+	position: relative
 }
 
 .footer-container-1 {
@@ -10,7 +10,7 @@ footer {
 	height: 100px;
 	padding: 0 60px;
 	color: var(--white1);
-	background-color: var(--orange1)
+	background-color: var(--green1)
 }
 
 .footer-container-2 {
@@ -27,8 +27,8 @@ footer {
 	height: 430px;
 	position: relative;
 	padding: 45px 85px 60px 66px;
-	color: #222831;
-	background-color: #F3F3F3;
+	color: var(--gray3);
+	background-color: var(--white13)
 }
 
 .footer-container-4 {
@@ -55,8 +55,7 @@ footer {
 .footer-container-7 {
 	display: flex;
 	flex-direction: column;
-	row-gap: 10px;
-
+	row-gap: 10px
 }
 
 .footer-container-8 {
@@ -85,7 +84,7 @@ footer {
 	height: 80px;
 	font-weight: 500;
 	font-size: 16px;
-	border-top: solid 4px var(--orange1);
+	border-top: solid 4px var(--green1);
 	color: var(--white1);
 	background-color: var(--gray2)
 }
@@ -98,11 +97,11 @@ footer {
 .footer-title-2 {
 	font-weight: 700;
 	font-size: 32px;
-	color: #222831;
+	color: var(--gray3)
 }
 
 .footer-title-2 span {
-	color: #7BC74D;
+	color: var(--green1)
 }
 
 .footer-title-3 {
@@ -125,7 +124,7 @@ footer {
 
 .footer-item-1-span-1 {
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 18px
 }
 
 .footer-item-1-span-2 {
@@ -154,21 +153,19 @@ footer {
 	font-weight: 600;
 	font-size: 18px;
 	padding: 3px 0;
-	color: #636363;
+	color: var(--gray13);
 	cursor: pointer
 }
 
 .footer-span-1, .footer-span-2 {
 	font-weight: 600;
 	font-size: 18px;
-	color: #636363;
+	color: var(--gray13)
 }
 
 .footer-span-3 {
 	margin-right: 12px;
-	/*font-weight: 500;*/
-	font-size: 17px;
-	/*letter-spacing: 1px*/
+	font-size: 17px
 }
 
 .footer-image-1 {
@@ -443,12 +440,12 @@ footer {
 	.footer-container-3 {
 		flex-direction: column;
 		height: fit-content;
-		padding: 40px 15px 25px 15px
+		padding: 40px 15px 25px
 	}
 
 	.footer-container-4 {
 		width: 100%;
-		padding: 0 20px 20px 20px;
+		padding: 0 20px 20px;
 		row-gap: 20px
 	}
 
@@ -478,9 +475,9 @@ footer {
 
 	.footer-container-11 {
 		height: 55px;
-		font-size: 10px;
+		font-size: 12px;
 		font-weight: 600;
-		border-top: 5px solid var(--orange1)
+		border-top: 5px solid var(--green1)
 	}
 
 	.footer-line-1 {
@@ -489,7 +486,7 @@ footer {
 		height: 1px;
 		width: calc(100% - 30px);
 		margin: 10px 0;
-		background-color: #E0E0E0
+		background-color: var(--white7)
 	}
 
 	.footer-title-3 {
@@ -500,7 +497,7 @@ footer {
 		display: block;
 		width: 100%;
 		font-weight: 900;
-		color: #222831;
+		color: var(--gray3)
 	}
 
 	.footer-span-4 {
@@ -509,7 +506,7 @@ footer {
 		margin-bottom: 20px;
 		font-weight: 600;
 		font-size: 12px;
-		color: #636363
+		color: var(--gray13)
 	}
 
 	.footer-item-1-icon {
@@ -567,7 +564,7 @@ footer {
 
 @media screen and (max-width: 400px) {
 	.footer-container-4 {
-		padding: 0 5px 20px 5px;
+		padding: 0 5px 20px;
 		row-gap: 20px
 	}
 

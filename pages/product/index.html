@@ -1,1843 +1,2099 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>حیـات سـبــز - محصولات</title>
-	<style>
-		header {
-			position: relative;
-		}
-
-		nav {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-
-			height: 155px;
-			position: relative;
-			overflow-x: hidden !important;
-
-			padding: 0 65px 0 60px;
-
-			background-color: #ffffff;
-			box-shadow: 0 9px 34px rgba(0, 0, 0, 0.04);
-		}
-
-		body {
-			background-color: #F7F7F7 !important;
-			font-weight: 300 !important;
-			direction: rtl !important;
-			margin: 0 !important;
-			overflow-x: hidden !important;
-			font-family: YekanBakh, serif !important;
-		}
-
-		main {
-			padding: 90px 0 0 0;
-			position: relative;
-		}
-
-		.header-container-1 {
-			display: flex;
-			align-items: center;
-			column-gap: 12px;
-		}
-
-		.header-container-2 {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-
-			width: 550px;
-
-			margin: 12px 0 0;
-			padding: 0;
-
-			list-style: none;
-			font-family: VazirFd, serif;
-			font-weight: 500;
-			font-size: 14px;
-		}
-
-		.header-container-3 {
-			display: flex;
-			column-gap: 25px;
-		}
-
-		.header-span-1 {
-			font-weight: 600;
-			font-size: 30px;
-
-			color: #222831;
-		}
-
-		.header-span-1 span {
-			color: #7BC74D;
-		}
-
-		.header-li a {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			row-gap: 8px;
-
-			height: 100%;
-
-			color: #000000;
-			text-decoration: none;
-			cursor: pointer;
-			white-space: nowrap;
-		}
-
-		.header-li :hover {
-			color: #000000;
-		}
-
-		.li-active {
-			font-weight: 700;
-		}
-
-		.header-li-active-line {
-			width: 32px;
-			height: 2px;
-			background-color: #A3F571;
-			visibility: hidden;
-		}
-
-		.li-active .header-li-active-line {
-			visibility: visible;
-		}
-
-		.header-icon-1, .header-icon-2 {
-			cursor: pointer;
-			width: 23px;
-		}
-
-		.header-image {
-			width: 50px;
-			object-fit: contain;
-		}
-
-		.header-container-4, .design-image-9 {
-			display: none;
-		}
-
-		/*		First Section		*/
-		.first-section {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			column-gap: 60px;
-
-			position: relative;
-			padding: 30px 50px 30px 30px;
-			margin: 0 65px;
-
-			background: #ffffff;
-			box-shadow: 0 13px 72px rgba(0, 0, 0, 0.07);
-			border-radius: 23px;
-		}
-
-		.first-section-container-1 {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-
-			padding: 20px 0;
-		}
-
-		.first-section-container-2 {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-
-		.first-section-container-3 {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.first-section-container-4 {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		.first-section-container-5 {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			column-gap: 5px;
-
-			white-space: nowrap;
-		}
-
-		.first-section-container-6 {
-			display: flex;
-			flex-grow: 1;
-			justify-content: end;
-			column-gap: 2px;
-		}
-
-		.first-section-container-7 {
-			display: flex;
-			justify-content: center;
-
-			padding-top: 25px;
-
-			border-top: 1px solid #E0E0E0;
-		}
-
-		.first-section-container-7 div {
-			max-height: 180px;
-			flex-grow: 1;
-		}
-
-		.first-section-container-7 div img {
-			width: 100%;
-			height: 100%;
-			object-fit: contain;
-		}
-
-		.first-section-container-8 {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			row-gap: 35px;
-			flex-grow: 1;
-		}
-
-		.first-section-container-9 {
-			display: flex;
-			flex-direction: column;
-			row-gap: 30px;
-
-			padding: 20px 30px 60px 15px;
-
-			color: #3D3D3D;
-			background: #F0F0F0;
-			border-radius: 9px;
-		}
-
-		.first-section-container-10 {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			column-gap: 130px;
-		}
-
-		.first-section-container-11 {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		.first-section-container-12 {
-			display: flex;
-			flex-direction: column;
-			align-items: start;
-			row-gap: 3px;
-		}
-
-		.first-section-container-13 {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-
-			position: relative;
-
-			column-gap: 20px;
-		}
-
-		.first-section-container-14 {
-			display: flex;
-			align-items: center;
-			column-gap: 8px;
-		}
-
-		.first-section-title-1 {
-			font-weight: 700;
-			font-size: 30px;
-
-			color: #212121;
-		}
-
-		.first-section-title-2 {
-			font-family: VazirFd, serif;
-			font-weight: 700;
-			font-size: 18px;
-
-			color: #3D3D3D;
-		}
-
-		.first-section-span-1 {
-			font-weight: 400;
-			font-size: 12px;
-
-			color: #7BC74D;
-		}
-
-		.first-section-span-2 {
-			margin-bottom: -10px;
-
-			font-family: VazirFd, serif;
-			font-weight: 900;
-			font-size: 25px;
-			text-decoration-line: line-through;
-
-			color: #FF3030;
-		}
-
-		.first-section-span-3 {
-			font-family: VazirFd, serif;
-			display: flex;
-			align-items: center;
-			column-gap: 7px;
-
-			font-weight: 900;
-			font-size: 28px;
-
-			color: #222831;
-		}
-
-		.first-section-span-4 {
-			font-size: 15px;
-		}
-
-		.first-section-span-5 {
-			cursor: pointer;
-			-webkit-touch-callout: none;
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-		}
-
-		.first-section-span-6 {
-			padding: 5px 5px 3px;
-			font-family: VazirFd, serif;
-			width: 50px;
-			text-align: center;
-
-			border: 1px solid #E7E7E7;
-			border-radius: 2px;
-		}
-
-		.first-section-span-6:focus {
-			border: 1px solid #E7E7E7;
-			outline: none;
-		}
-
-		.first-section-paragraph {
-			margin: 50px 0;
-
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 45px;
-
-			text-align: justify;
-
-			color: #646464;
-		}
-
-		.first-section-ul {
-			list-style: none;
-			font-weight: 600;
-			font-size: 19px;
-			padding: 0;
-		}
-
-		.first-section-ul li {
-			padding: 3px 0;
-		}
-
-		.first-section-ul li i {
-			margin-left: 10px;
-
-			font-size: 14px;
-
-			color: #7BC74D;
-		}
-
-		.first-section-button-1 {
-			width: 92px;
-			height: 30px;
-
-			margin-left: 5px;
-
-			font-family: VazirFd, serif;
-			font-weight: 700;
-			font-size: 14px;
-
-			cursor: default !important;
-			border: none;
-			color: #ffffff;
-			background: #C9C9C9;
-			border-radius: 4px;
-		}
-
-		.first-section-button-2 {
-			width: 105px;
-			height: 29px;
-
-			font-family: VazirFd, serif;
-			font-weight: 700;
-			font-size: 14px;
-
-			border: none;
-			color: #ffffff;
-			background: #7BC74D;
-			border-radius: 4px;
-		}
-
-		.first-section-button-3 {
-			width: 58px;
-			height: 58px;
-
-			font-family: VazirFd, serif;
-			font-weight: 900;
-			font-size: 18px;
-
-			border: none;
-			color: #ffffff;
-			background: #FF3030;
-			border-radius: 5px;
-		}
-
-		.first-section-button-4 {
-			width: 199px;
-			height: 43px;
-
-			font-family: VazirFd, serif;
-			font-weight: 700;
-			font-size: 15px;
-
-			border: none;
-			color: #ffffff;
-			background: #7BC74D;
-			border-radius: 5px;
-		}
-
-		.first-section-icon-1 {
-			width: 18px;
-			cursor: pointer;
-		}
-
-		.first-section-icon-2:nth-last-child(5), .first-section-icon-2:nth-last-child(4) {
-			filter: invert(31%) sepia(0%) saturate(30%) hue-rotate(187deg) brightness(99%) contrast(82%);
-		}
-
-		.first-section-image-1 {
-			height: 360px;
-			object-fit: contain;
-		}
-
-		.first-section-image-3 {
-			position: absolute;
-			object-fit: fill;
-			z-index: -100;
-			bottom: -60px;
-			width: 95%;
-			max-height: 100%;
-		}
-
-		.design-image-14 {
-			position: absolute;
-			top: 620px;
-			right: 0;
-			width: 100%;
-			z-index: -100;
-		}
-
-		/*		Mobile		*/
-		.first-section-image-4, .header-icon-5,
-		.first-section-span-7, .second-section-container-3 {
-			display: none;
-		}
-
-		@media screen and (max-width: 1400px) {
-			nav {
-				height: 145px;
-			}
-
-			/*		First Section		*/
-			.first-section {
-				column-gap: 40px;
-			}
-
-			.first-section-container-6 {
-				white-space: nowrap;
-			}
-
-			.first-section-container-9 {
-				row-gap: 20px;
-
-				padding: 20px 30px 40px 15px;
-			}
-
-			.first-section-container-10 {
-				column-gap: 90px;
-			}
-
-			.first-section-container-7 div img {
-			}
-
-			.first-section-title-1 {
-				font-size: 24px;
-			}
-
-			.first-section-title-2 {
-				font-size: 16px;
-			}
-
-			.first-section-span-2 {
-				font-size: 22px;
-			}
-
-			.first-section-span-3 {
-				font-size: 25px;
-			}
-
-			.first-section-span-4 {
-				font-size: 12px;
-			}
-
-			.first-section-paragraph {
-				margin: 30px 0;
-
-				font-size: 14px;
-				line-height: 40px;
-			}
-
-			.first-section-ul {
-				font-size: 16px;
-			}
-
-			.first-section-ul li i {
-				margin-left: 5px;
-
-				font-size: 12px;
-			}
-
-			.first-section-button-1 {
-				width: 82px;
-				height: 25px;
-
-				font-size: 12px;
-			}
-
-			.first-section-button-2 {
-				width: 95px;
-				height: 25px;
-
-				font-size: 12px;
-			}
-
-			.first-section-button-3 {
-				width: 48px;
-				height: 48px;
-
-				font-size: 16px;
-			}
-
-			.first-section-button-4 {
-				width: 189px;
-				height: 40px;
-
-				font-size: 13px;
-			}
-
-			.first-section-image-1 {
-				height: 280px;
-			}
-		}
-
-		@media screen and (max-width: 1200px) {
-			nav {
-				height: 135px;
-
-				padding: 0 68px;
-			}
-
-			.header-container-2 {
-				width: 500px;
-
-				font-size: 14px;
-			}
-
-			.header-container-3 {
-				column-gap: 20px;
-			}
-
-			.header-span-1 {
-				font-size: 16px;
-			}
-
-			.header-li-active-line {
-				width: 28px;
-			}
-
-			.header-icon-1, .header-icon-2 {
-				width: 20px;
-			}
-
-			.header-image {
-				width: 40px;
-			}
-
-			/*		First Section		*/
-			.first-section {
-				column-gap: 30px;
-				padding: 20px 30px 20px 20px;
-			}
-
-			.first-section-container-7 img {
-				/*width: 90px;*/
-			}
-
-			.first-section-container-9 {
-				padding: 20px 15px 40px;
-			}
-
-			.first-section-container-10 {
-				column-gap: 80px;
-			}
-
-			.first-section-title-1 {
-				font-size: 22px;
-			}
-
-			.first-section-title-2 {
-				font-size: 14px;
-			}
-
-			.first-section-span-1 {
-				font-size: 10px;
-			}
-
-			.first-section-span-2 {
-				font-size: 18px;
-			}
-
-			.first-section-span-3 {
-				font-size: 22px;
-			}
-
-			.first-section-span-4 {
-				font-size: 11px;
-			}
-
-			.first-section-paragraph {
-				font-size: 12px;
-				line-height: 30px;
-			}
-
-			.first-section-ul {
-				font-size: 14px;
-			}
-
-			.first-section-ul li i {
-				font-size: 11px;
-			}
-
-			.first-section-button-2 {
-				width: 85px;
-				height: 22px;
-
-				font-size: 11px;
-			}
-
-			.first-section-button-3 {
-				width: 38px;
-				height: 38px;
-
-				font-size: 14px;
-			}
-
-			.first-section-button-4 {
-				width: 150px;
-				height: 32px;
-
-				font-size: 13px;
-			}
-
-			.first-section-icon-1, .first-section-icon-2 {
-				width: 16px;
-			}
-
-			.first-section-image-1 {
-				height: 200px;
-			}
-
-			.first-section-image-3 {
-				bottom: -45px;
-			}
-		}
-
-		@media screen and (max-width: 992px) {
-			nav {
-				height: 120px;
-
-				padding: 0 44px 0 50px;
-			}
-
-			main {
-				padding: 60px 35px 50px 35px;
-			}
-
-			.header-container-2 {
-				width: 400px;
-
-				font-size: 12px;
-			}
-
-			.header-span-1 {
-				font-size: 13px;
-			}
-
-			.li-active .header-li-active-line {
-				width: 20px;
-			}
-
-			.header-icon-1, .header-icon-2 {
-				width: 17px;
-			}
-
-			.header-image {
-				width: 30px;
-			}
-
-			/*		First Section		*/
-			.first-section {
-				column-gap: 20px;
-				padding: 20px 30px 20px 20px;
-				margin: 0;
-			}
-
-			.first-section-container-1 {
-				min-width: 210px;
-			}
-
-			.first-section-container-2 {
-				row-gap: 0;
-			}
-
-			.first-section-container-5 {
-				column-gap: 3px;
-			}
-
-			.first-section-container-7 {
-				padding-top: 15px;
-			}
-
-			.first-section-container-7 div {
-				/*padding: 0 5px 0;*/
-			}
-
-			.first-section-container-8 {
-				row-gap: 20px;
-			}
-
-			.first-section-container-9 {
-				padding: 20px 15px 0;
-			}
-
-			.first-section-container-10 {
-				column-gap: 0;
-			}
-
-			.first-section-title-1 {
-				font-size: 18px;
-			}
-
-			.first-section-title-2 {
-				font-size: 12px;
-			}
-
-			.first-section-span-1 {
-				font-size: 7px;
-			}
-
-			.first-section-span-2 {
-				font-size: 14px;
-			}
-
-			.first-section-span-3 {
-				font-size: 18px;
-			}
-
-			.first-section-span-4 {
-				font-size: 9px;
-			}
-
-			.first-section-paragraph {
-				font-size: 10px;
-				line-height: 25px;
-
-				margin: 10px 0 30px;
-			}
-
-			.first-section-button-1 {
-				width: 63px;
-				height: 22px;
-				font-size: 9px;
-			}
-
-			.first-section-button-2 {
-				width: 72px;
-				height: 20px;
-
-				font-size: 9px;
-			}
-
-			.first-section-button-3 {
-				width: 30px;
-				height: 30px;
-
-				font-size: 10px;
-			}
-
-			.first-section-button-4 {
-				width: 100px;
-				height: 25px;
-				font-size: 10px;
-			}
-
-			.first-section-ul {
-				font-size: 11px;
-			}
-
-			.first-section-ul li i {
-				font-size: 10px;
-			}
-
-			.first-section-icon-1, .first-section-icon-2 {
-				width: 12px;
-			}
-
-			.first-section-image-1 {
-				height: 180px;
-			}
-
-			.first-section-image-3 {
-				bottom: -30px;
-			}
-
-			.design-image-14 {
-				display: none;
-			}
-		}
-
-		@media screen and (max-width: 768px) {
-			nav {
-				height: 100px;
-
-				padding: 0 25px 0 30px;
-			}
-
-			main {
-				padding: 60px 25px 40px 25px;
-			}
-
-			.header-container-2 {
-				width: 300px;
-
-				font-size: 10px;
-			}
-
-			.header-span-1 {
-				font-size: 11px;
-			}
-
-			.header-icon-1, .header-icon-2 {
-				width: 14px;
-			}
-
-			.first-section {
-				padding: 20px 10px 15px 15px;
-			}
-
-			.first-section-image-1 {
-				height: 130px;
-			}
-
-			.first-section-title-1 {
-				font-size: 16px;
-			}
-
-			.first-section-button-1 {
-				width: 55px;
-				height: 20px;
-				font-size: 8px;
-				margin: 0;
-			}
-
-			.first-section-container-1 {
-				min-width: 150px;
-				padding: 10px 0;
-			}
-
-			.first-section-paragraph {
-				font-size: 9px;
-				line-height: 22px;
-			}
-
-			.first-section-container-6 {
-				column-gap: 1px;
-			}
-
-			.first-section-container-7 {
-				padding-top: 10px;
-			}
-
-			.first-section-container-7 img {
-				width: 55px;
-			}
-
-			.first-section-container-8 {
-				row-gap: 10px;
-			}
-
-			.first-section-title-2 {
-				font-size: 10px;
-			}
-
-			.first-section-button-2 {
-				width: 60px;
-				height: 18px;
-
-				font-size: 8px;
-			}
-
-			.first-section-container-9 {
-				padding: 10px 10px 0;
-			}
-
-			.first-section-ul {
-				font-size: 10px;
-			}
-
-			.first-section-ul li i {
-				font-size: 8px;
-			}
-
-			.first-section-span-2 {
-				font-size: 11px;
-			}
-
-			.first-section-span-3 {
-				font-size: 14px;
-			}
-
-			.first-section-span-4 {
-				font-size: 8px;
-			}
-
-			.first-section-container-5 {
-				column-gap: 2px;
-			}
-
-			.first-section-button-4 {
-				width: 80px;
-				height: 20px;
-
-				font-size: 8px;
-			}
-
-			.first-section-span-1 {
-				font-size: 5px;
-			}
-
-			.first-section-icon-1, .first-section-icon-2 {
-				width: 9px;
-			}
-
-			.first-section-container-13 {
-				column-gap: 20px;
-			}
-
-			.first-section-container-14 {
-				column-gap: 6px;
-			}
-
-			.first-section-span-5 {
-				cursor: pointer;
-				font-size: 10px;
-			}
-
-			.first-section-span-6 {
-				padding: 3px 8px 1px;
-				font-size: 11px;
-			}
-		}
-
-		@media screen and (max-width: 576px) {
-			nav {
-				height: 80px;
-			}
-
-			main {
-				padding: 60px 25px 30px 25px;
-			}
-
-			.header-container-2 {
-				width: 240px;
-
-				font-size: 9px;
-			}
-
-			.header-container-3 {
-				column-gap: 10px;
-			}
-
-			.header-span-1 {
-				font-size: 10px;
-			}
-
-			.header-image {
-				width: 25px;
-			}
-
-			.first-section {
-				column-gap: 15px;
-				padding: 20px;
-			}
-
-			.first-section-image-1 {
-				height: 100px;
-			}
-
-			.first-section-title-1 {
-				font-size: 14px;
-			}
-
-			.first-section-button-1 {
-				width: 48px;
-				height: 18px;
-				font-size: 7px;
-			}
-
-			.first-section-container-1 {
-				min-width: 120px;
-			}
-
-			.first-section-container-2 {
-				row-gap: 5px;
-			}
-
-			.first-section-paragraph {
-				font-size: 8px;
-				line-height: 18px;
-			}
-
-			.first-section-container-7 img {
-				width: 45px;
-			}
-
-			.first-section-title-2 {
-				font-size: 9px;
-			}
-
-			.first-section-button-2 {
-				width: 55px;
-				height: 16px;
-
-				font-size: 7px;
-			}
-
-			.first-section-ul {
-				font-size: 9px;
-			}
-
-			.first-section-ul li i {
-				font-size: 7px;
-			}
-
-			.first-section-span-2 {
-				font-size: 10px;
-			}
-
-			.first-section-span-3 {
-				font-size: 12px;
-				column-gap: 2px;
-			}
-
-			.first-section-span-4 {
-				font-size: 6px;
-			}
-
-			.first-section-container-5 {
-				column-gap: 2px;
-			}
-
-			.first-section-button-4 {
-				width: 60px;
-				height: 18px;
-
-				font-size: 6px;
-			}
-
-			.first-section-span-1 {
-				font-size: 4px;
-			}
-
-			.first-section-icon-1, .first-section-icon-2 {
-				width: 7px;
-			}
-
-			.first-section-container-13 {
-				column-gap: 8px;
-			}
-
-			.first-section-span-5 {
-				font-size: 8px;
-			}
-
-			.first-section-span-6 {
-				padding: 1px 7px 0;
-				font-size: 9px;
-			}
-
-			.first-section-image-3 {
-				bottom: -25px;
-				width: 90%;
-				height: 200px;
-			}
-		}
-
-		@media screen and (max-width: 480px) {
-			nav {
-				height: 50px;
-
-				margin: 20px 15px 0;
-				padding: 10px 13px;
-
-				box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
-				border-radius: 9px;
-			}
-
-			main {
-				padding: 50px 0 0;
-				overflow-x: hidden;
-			}
-
-			body {
-				background-color: #FFFFFF !important;
-
-			}
-
-			.header-container-1 {
-				flex-direction: row;
-				align-items: center;
-				column-gap: 7px;
-			}
-
-			.header-container-4 {
-				display: flex;
-				column-gap: 12px;
-			}
-
-			.header-span-1 {
-				margin: 0;
-				font-size: 14px;
-			}
-
-			.header-icon-3, .header-icon-4, .header-icon-5 {
-				width: 20px;
-			}
-
-			.header-icon-5 {
-				display: block;
-				margin-left: 15px;
-			}
-
-			.design-image-9 {
-				display: block;
-				position: absolute;
-				left: 0;
-				top: -30px;
-			}
-
-			.header-container-2, .header-container-3 {
-				display: none;
-			}
-
-			.first-section {
-				flex-direction: column;
-
-				padding: 0 30px;
-
-				background-color: transparent;
-				box-shadow: none;
-			}
-
-			.first-section-container-1 {
-				order: 1;
-				width: 100%;
-			}
-
-			.first-section-image-4 {
-				display: block;
-				order: 2;
-
-				width: 100%;
-				object-fit: contain;
-
-				margin: 40px 0 50px;
-			}
-
-			.first-section-container-8 {
-				order: 3;
-				width: 100%;
-				row-gap: 20px;
-
-				padding: 50px 0;
-
-
-				border-top: 1px solid #E0E0E0;;
-				border-bottom: 1px solid #E0E0E0;;
-			}
-
-			.first-section-container-3 {
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				row-gap: 10px;
-
-				padding: 0 0 30px;
-
-				border-bottom: 1px solid #E0E0E0;
-			}
-
-			.first-section-container-11, .first-section-container-13 {
-				justify-content: center;
-			}
-
-			.first-section-span-3 {
-				font-size: 24px;
-				column-gap: 5px;
-			}
-
-			.first-section-span-4 {
-				font-size: 14px;
-			}
-
-			.first-section-button-4 {
-				width: 270px;
-				height: 40px;
-
-				font-size: 14px;
-
-				border-radius: 35px;
-			}
-
-			.first-section-title-1 {
-				font-size: 22px;
-			}
-
-			.first-section-span-7 {
-				display: inline;
-
-				font-weight: 600;
-				font-size: 12px;
-
-				color: #A3A3A3;
-			}
-
-			.first-section-image-3 {
-				display: none;
-			}
-
-			/*		!= Mobile		*/
-			.forth-section-title-1, .first-section-image-1,
-			.first-section-container-4, .first-section-button-1, .first-section-paragraph,
-			.first-section-container-7, .first-section-container-9, .first-section-span-2,
-			.first-section-button-3, .first-section-container-14, .second-section-container-2,
-			.third-section, .forth-section-container-1 {
-				display: none;
-			}
-		}
-
-		@media screen and (max-width: 400px) {
-			nav {
-				height: 45px;
-			}
-
-			main {
-				padding: 40px 0 0;
-				overflow-x: hidden;
-			}
-
-			.header-container-1 {
-				column-gap: 5px;
-			}
-
-			.header-container-4 {
-				column-gap: 10px;
-			}
-
-			.header-span-1 {
-				font-size: 12px;
-			}
-
-			.header-icon-3, .header-icon-4, .header-icon-5 {
-				width: 15px;
-			}
-
-		}
-
-	</style>
-	<link rel="preload"
-		  href="../../src/font/fonts.css"
-		  as="style"
-		  onload="this.rel='stylesheet'"/>
-	<link rel="preload"
-		  href="style.css"
-		  as="style"
-		  onload="this.rel='stylesheet'"/>
-	<link rel="preload"
-		  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-		  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
-		  as="style"
-		  onload="this.rel='stylesheet'"/>
-	<link rel="prefetch"
-		  href="../../public/Logo.ico"
-		  sizes="32x32"
-		  onload="this.rel='icon'">
-	<link rel="prefetch"
-		  href="../../public/Logo.ico"
-		  sizes="32x32"
-		  onload="this.rel='apple-touch-icon'">
-</head>
-<body>
-<header>
-	<img class="design-image-9" src="../../src/assets/images/Rectangle%2022.png" alt=""/>
-	<nav id="nav">
-		<div class="header-container-1">
-			<img class="header-icon-5" src="../../src/assets/icons/mobile-Menu.svg" alt=""/>
-			<img class="header-image" src="../../src/assets/images/Layer-7.png" alt=""/>
-			<span class="header-span-1">
-			 حیـات <span>سـبــز</span>
-			</span>
-		</div>
-		<ul class="header-container-2">
-			<li class="header-li">
-				<a href="../../index.html">
-					صفحه اصلی
-					<div class="header-li-active-line"></div>
-				</a>
-			</li>
-			<li class="header-li li-active">
-				<a href="./index.html">
-					محصولات
-					<div class="header-li-active-line"></div>
-				</a>
-			</li>
-			<li class="header-li">
-				<a href="../category/index.html">
-					دسته بندی
-					<div class="header-li-active-line"></div>
-				</a>
-			</li>
-			<li class="header-li">
-				<a>
-					درباره ما
-					<div class="header-li-active-line"></div>
-				</a>
-			</li>
-			<li class="header-li">
-				<a>
-					تماس با ما
-					<div class="header-li-active-line"></div>
-				</a>
-			</li>
-		</ul>
-		<div class="header-container-3">
-			<img class="header-icon-1" src="../../src/assets/icons/search-normal.svg" alt=""/>
-			<img class="header-icon-2" src="../../src/assets/icons/shopping-cart.svg" alt=""/>
-		</div>
-		<div class="header-container-4">
-			<img class="header-icon-3" src="../../src/assets/icons/mobiel-Search.svg" alt=""/>
-			<img class="header-icon-4" src="../../src/assets/icons/mobile-Shop.svg" alt=""/>
-		</div>
-	</nav>
-</header>
-<main>
-	<img class="design-image-14" src="../../src/assets/images/items%202.png" alt=""/>
-	<section class="first-section">
-		<img class="first-section-image-1" src="../../src/assets/images/Group%202931.png" alt="">
-		<img class="first-section-image-3" src="../../src/assets/images/Rectangle%2017.png" alt="">
-		<img class="first-section-image-4" src="../../src/assets/images/Group%2035.png" alt="">
-		<div class="first-section-container-1">
-			<div class="first-section-container-2">
-				<div class="first-section-container-3">
-					<span class="first-section-title-1">
-						کود معدنی
-					</span>
-					<span class="first-section-span-7">
-								یک توضیحات کوتاه برای این محصول
-							</span>
-					<button class="first-section-button-1">مناسب گیاه</button>
-				</div>
-				<div class="first-section-container-4">
-					<div class="first-section-container-5">
-						<img class="first-section-icon-1" src="../../src/assets/icons/heart.svg" alt=""/>
-						<span class="first-section-span-1">افزودن این محصول به لیست به علاقه مندی ها</span>
-					</div>
-					<div class="first-section-container-6">
-						<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-						<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-						<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-						<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-						<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-					</div>
-				</div>
-			</div>
-			<p class="first-section-paragraph">
-				ستون و سطرآنچنان که لازم است استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در لورم
-				ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-			</p>
-			<div class="first-section-container-7">
-				<div>
-					<img src="../../src/assets/images/Group%202935.png" alt=""/>
-				</div>
-				<div>
-					<img src="../../src/assets/images/Group%202935.png" alt=""/>
-				</div>
-				<div>
-					<img src="../../src/assets/images/Group%202935.png" alt=""/>
-				</div>
-			</div>
-		</div>
-		<div class="first-section-container-8">
-			<div class="first-section-container-9">
-				<div class="first-section-container-10">
-							<span class="first-section-title-2">
-								مشخصـات
-							</span>
-					<button class="first-section-button-2">
-						موجود در انبار
-					</button>
-				</div>
-				<ul class="first-section-ul">
-					<li>
-						<i class="fas fa-solid fa-square"></i>
-						دریـل برقی
-					</li>
-					<li>
-						<i class="fas fa-solid fa-square"></i>
-						دریـل برقی
-					</li>
-					<li>
-						<i class="fas fa-solid fa-square"></i>
-						دریـل برقی
-					</li>
-					<li>
-						<i class="fas fa-solid fa-square"></i>
-						دریـل برقی
-					</li>
-				</ul>
-			</div>
-			<div class="first-section-container-11">
-				<div class="first-section-container-12">
-					<span class="first-section-span-2">
-								250,000
-					</span>
-					<span class="first-section-span-3">
-								199,000
-					<span class="first-section-span-4">
-									تومان
-								</span>
-					</span>
-				</div>
-				<button class="first-section-button-3">50%</button>
-			</div>
-			<div class="first-section-container-13">
-				<div class="first-section-container-14">
-					<span onclick="changeCount(true)" class="first-section-span-5">+</span>
-					<input
-							onblur="if(this.value === ''){this.value= 1}"
-							oninput="this.value = this.value.replace(/[^1-9.]/g, '');"
-							value="1" id="productCount" class="first-section-span-6"/>
-					<span onclick="changeCount(false)" class="first-section-span-5">-</span>
-				</div>
-				<button class="first-section-button-4">
-					اضافه به سبد خرید
-				</button>
-			</div>
-		</div>
-	</section>
-	<section class="second-section">
-		<img class="second-section-image-1" src="../../src/assets/images/Rectangle%2060.png" alt="">
-		<div class="second-section-container-1">
-			<span class="second-section-title-1">
-						توضیحـات کامـل محصـول
-				</span>
-			<div class="second-section-container-2">
-				<span class="second-section-span-1 second-section-span-active">
-						توضیحات
-						<span class="second-section-span-active-line"></span>
-					</span>
-				<span class="second-section-span-1">
-						ویژگی ها
-						<span class="second-section-span-active-line"></span>
-					</span>
-				<span class="second-section-span-1">
-						نظرات کاربران
-						<span class="second-section-span-active-line"></span>
-					</span>
-			</div>
-		</div>
-		<p class="second-section-paragraph-1">
-			افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
-			کرد . تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت
-			و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد ، تا با نـــــــــــــرم لورم
-			ایپسوم متن ساختگی با تولید سادگی نامفهوم
-			<br/>
-			از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
-			بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلــــــیافزارها شناخت بیشتری را برای
-			طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد . تکنولوژی مورد نیاز، و
-			کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
-			شناخت فراوان جامعه و متخصصان را می طلبد ، تا با نـــــــــــــرم لورم ایپسوم متن ساختگی با تولید سادگی
-			نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
-			<br/>
-			سطرآنچنان که لازم است، و برای شرایط فعلــــــیافزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
-			طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد . تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
-			ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان
-			را می طلبد ، تا با نـــــــــــــرم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-			استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
-			شرایط فعلــــــی
-		</p>
-		<div class="second-section-container-3">
-			<span class="second-section-title-2">
-				ویژگی ها
-			</span>
-			<ul class="second-section-ul">
-				<li>
-					<i class="fas fa-solid fa-square"></i>
-					کود درجه یک
-				</li>
-				<li>
-					<i class="fas fa-solid fa-square"></i>
-					کود درجه یک
-				</li>
-				<li>
-					<i class="fas fa-solid fa-square"></i>
-					کود درجه یک
-				</li>
-			</ul>
-			<p class="second-section-paragraph-2">
-				ستون و سطرآنچنان که لازم است استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در لورم
-				ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-			</p>
-		</div>
-	</section>
-	<section class="third-section">
-			<span class="third-section-title-1">
-				نظرات کاربران
-			</span>
-		<div class="third-section-container-1">
-			<img class="third-section-image-1" src="../../src/assets/images/Rectangle%20172.png" alt=""/>
-			<img class="third-section-image-2" src="../../src/assets/images/Vector%209.png" alt=""/>
-
-			<div class="third-section-container-2">
-				<div class="third-section-container-3">
-					<div class="third-section-container-4">
-							<span class="third-section-span-1">
-								سعید رضویان
-							</span>
-						<div class="third-section-container-5">
-							<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-							<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-							<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-							<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-							<img class="first-section-icon-2" src="../../src/assets/icons/star.svg" alt=""/>
-						</div>
-					</div>
-					<span class="third-section-span-2">
-							خریدار محصول
-						</span>
-				</div>
-				<button class="third-section-button-1">
-					سه روز پیش
-				</button>
-			</div>
-			<p class="third-section-paragraph">
-				افزارها شناختخصوص طراحان خلاقع با هدف بهبود ابزارهای کاربررصد گذشته حال و آینده، شناخت فراوان جامع طلبرم
-				ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
-				بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلــــــی
-			</p>
-		</div>
-	</section>
-	<section class="forth-section">
-		<div class="global-1-container-1">
-			<span class="global-1-title-1">محصولـات مشابـه</span>
-			<div>
-				<img class="slider-first-button" src="../../src/assets/icons/arrow-right.svg" alt="">
-				<img class="slider-second-button" src="../../src/assets/icons/arrow-right.svg" alt="">
-			</div>
-		</div>
-		<div class="global-1-container-2">
-			<div class="global-1-item-container-1">
-				<div class="global-1-item-container-3">
-					<img class="global-1-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
-					<img class="global-1-item-image-1"
-						 src="../../src/assets/images/ascsaewf%201.png"
-						 alt=""/>
-					<div class="global-1-item-container-4">
-						<div class="global-1-item-container-5">
-							<span class="global-1-item-span-3">کود معدنی</span>
-							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
-						</div>
-						<img class="global-1-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
-					</div>
-				</div>
-				<div class="global-1-item-container-2">
-						<span class="global-1-item-span-1">
-							250,000
-							<span class="global-1-item-span-2">
-								تومان
-							</span>
-						</span>
-					<button class="global-1-item-button">
-						خرید آنلاین
-					</button>
-				</div>
-			</div>
-			<div class="global-1-item-container-1">
-				<div class="global-1-item-container-3">
-					<img class="global-1-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
-					<img class="global-1-item-image-1"
-						 src="../../src/assets/images/ascsaewf%201.png"
-						 alt=""/>
-					<div class="global-1-item-container-4">
-						<div class="global-1-item-container-5">
-							<span class="global-1-item-span-3">کود معدنی</span>
-							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
-						</div>
-						<img class="global-1-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
-					</div>
-				</div>
-				<div class="global-1-item-container-2">
-						<span class="global-1-item-span-1">
-							250,000
-							<span class="global-1-item-span-2">
-								تومان
-							</span>
-						</span>
-					<button class="global-1-item-button">
-						خرید آنلاین
-					</button>
-				</div>
-			</div>
-			<div class="global-1-item-container-1">
-				<div class="global-1-item-container-3">
-					<img class="global-1-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
-					<img class="global-1-item-image-1"
-						 src="../../src/assets/images/ascsaewf%201.png"
-						 alt=""/>
-					<div class="global-1-item-container-4">
-						<div class="global-1-item-container-5">
-							<span class="global-1-item-span-3">کود معدنی</span>
-							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
-						</div>
-						<img class="global-1-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
-					</div>
-				</div>
-				<div class="global-1-item-container-2">
-						<span class="global-1-item-span-1">
-							250,000
-							<span class="global-1-item-span-2">
-								تومان
-							</span>
-						</span>
-					<button class="global-1-item-button">
-						خرید آنلاین
-					</button>
-				</div>
-			</div>
-			<div class="global-1-item-container-1">
-				<div class="global-1-item-container-3">
-					<img class="global-1-item-image-2" src="../../src/assets/icons/archive-tick.svg" alt="">
-					<img class="global-1-item-image-1"
-						 src="../../src/assets/images/ascsaewf%201.png"
-						 alt=""/>
-					<div class="global-1-item-container-4">
-						<div class="global-1-item-container-5">
-							<span class="global-1-item-span-3">کود معدنی</span>
-							<span class="global-1-item-span-4">مخصوص گیاهان گلخانه ای</span>
-						</div>
-						<img class="global-1-item-image-3" src="../../src/assets/icons/heart.svg" alt="">
-					</div>
-				</div>
-				<div class="global-1-item-container-2">
-						<span class="global-1-item-span-1">
-							250,000
-							<span class="global-1-item-span-2">
-								تومان
-							</span>
-						</span>
-					<button class="global-1-item-button">
-						خرید آنلاین
-					</button>
-				</div>
-			</div>
-		</div>
-	</section>
-</main>
-<footer>
-	<div class="footer-container-1">
-		<span class="footer-title-1">
-			با خیال راحت خرید کنید
-		</span>
-		<div class="footer-container-2">
-			<div class="footer-item-1-container-1">
-				<img class="footer-item-1-icon" src="../../src/assets/icons/card-pos.svg" alt="">
-				<div class="footer-item-1-container-2">
-					<span class="footer-item-1-span-1">
-						روش پرداخت
-					</span>
-					<span class="footer-item-1-span-2">
-						کلیه کارت های شتاب
-					</span>
-				</div>
-			</div>
-			<div class="footer-item-1-container-1">
-				<img class="footer-item-1-icon" src="../../src/assets/icons/box-tick.svg" alt="">
-				<div class="footer-item-1-container-2">
-					<span class="footer-item-1-span-1">
-						پست رایگان
-					</span>
-					<span class="footer-item-1-span-2">
-						خرید بالای 100 هزار تومان
-					</span>
-				</div>
-			</div>
-			<div class="footer-item-1-container-1">
-				<img class="footer-item-1-icon" src="../../src/assets/icons/box-tick.svg" alt="">
-				<div class="footer-item-1-container-2">
-					<span class="footer-item-1-span-1">
-						پست رایگان
-					</span>
-					<span class="footer-item-1-span-2">
-						خرید بالای 100 هزار تومان
-					</span>
-				</div>
-			</div>
-			<div class="footer-item-1-container-1">
-				<img class="footer-item-1-icon" src="../../src/assets/icons/card-pos.svg" alt="">
-				<div class="footer-item-1-container-2">
-					<span class="footer-item-1-span-1">
-						روش پرداخت
-					</span>
-					<span class="footer-item-1-span-2">
-						کلیه کارت های شتاب
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer-container-3">
-		<div class="footer-container-4">
-			<div class="footer-container-5">
-				<img class="footer-image-1" src="../../src/assets/images/Layer-7.png" alt=""/>
-				<div class="footer-container-6">
-					<span class="footer-title-2">
-						حیـات <span>سـبــز</span>
-					</span>
-					<span class="footer-title-3">
-					بزرگترین شرکت فروش کود در ایران
-					</span>
-				</div>
-			</div>
-			<div class="footer-container-7">
-				<span class="footer-span-1">
-					شیراز بعد از پل صنایع، شهرک باهنر کوچه 23 فروشگاه بزرگ ابزار پرو
-				</span>
-				<span class="footer-span-2">
-					تلفن تماس
-					<span class="footer-span-3">
-						4566 123 0917 - 2233 421 0713
-					</span>
-				</span>
-			</div>
-		</div>
-		<div class="footer-line-1"></div>
-		<div class="footer-container-8">
-			<div class="footer-container-9">
-				<div class="footer-item-2-container-1">
-					<span class="footer-item-2-title">
-						دسترسی سریع
-					</span>
-					<ul class="footer-item-2-ul">
-						<li class="footer-item-2-li">
-							تماس با ما
-						</li>
-						<li class="footer-item-2-li">
-							راهنمای خرید
-						</li>
-						<li class="footer-item-2-li">
-							پیگیری سفارش
-						</li>
-					</ul>
-				</div>
-				<div class="footer-item-2-container-1">
-					<span class="footer-item-2-title">
-						پرسش و پاسخ
-					</span>
-					<ul class="footer-item-2-ul">
-						<li class="footer-item-2-li">
-							تماس با ما
-						</li>
-						<li class="footer-item-2-li">
-							راهنمای خرید
-						</li>
-						<li class="footer-item-2-li">
-							پیگیری سفارش
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer-line-1"></div>
-			<div class="footer-container-10">
-				<span class="footer-title-4">مجوز ها</span>
-				<span class="footer-span-4">نماد اعتماد و مجوز صنعت معدن</span>
-				<img class="footer-image-2" src="../../src/assets/images/logo-anjooman-senfi%201.png" alt="">
-				<img class="footer-image-2" src="../../src/assets/images/samandehi-for-poponik%201.png" alt="">
-				<img class="footer-image-2" src="../../src/assets/images/1-min-6-250x230%201.png" alt="">
-			</div>
-		</div>
-	</div>
-	<div class="footer-container-11">
-		تمام حقوق متعلق به شرکت ابزار پرو میباشد
-	</div>
-</footer>
-<script rel="preload"
-		async
-		src="../../src/utility/breakpoints.js"></script>
-<script rel="preload"
-		async
-		src="script.js"></script>
-<script rel="preload"
-		async
-		src="../../src/js/script.js"></script>
-<script rel="preload"
-		async
-		crossorigin="anonymous"
-		src="https://kit.fontawesome.com/488d7f94e4.js"></script>
-<script rel="preload"
-		async
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حیـات سـبــز - محصولات</title>
+    <style>
+      header {
+        position: relative;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 155px;
+        position: relative;
+        overflow-x: hidden !important;
+
+        padding: 0 65px 0 60px;
+
+        background-color: #ffffff;
+        box-shadow: 0 9px 34px rgba(0, 0, 0, 0.04);
+      }
+
+      body {
+        background-color: #f7f7f7 !important;
+        font-weight: 300 !important;
+        direction: rtl !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+        font-family: YekanBakh, serif !important;
+      }
+
+      main {
+        padding: 90px 0 0 0;
+        position: relative;
+      }
+
+      .header-container-1 {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+      }
+
+      .header-container-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 550px;
+
+        margin: 12px 0 0;
+        padding: 0;
+
+        list-style: none;
+        font-family: VazirFd, serif;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      .header-container-3 {
+        display: flex;
+        column-gap: 25px;
+      }
+
+      .header-span-1 {
+        font-weight: 600;
+        font-size: 30px;
+
+        color: #222831;
+      }
+
+      .header-span-1 span {
+        color: #7bc74d;
+      }
+
+      .header-li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8px;
+
+        height: 100%;
+
+        color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+
+      .header-li :hover {
+        color: #000000;
+      }
+
+      .li-active {
+        font-weight: 700;
+      }
+
+      .header-li-active-line {
+        width: 32px;
+        height: 2px;
+        background-color: #a3f571;
+        visibility: hidden;
+      }
+
+      .li-active .header-li-active-line {
+        visibility: visible;
+      }
+
+      .header-icon-1,
+      .header-icon-2 {
+        cursor: pointer;
+        width: 23px;
+      }
+
+      .header-image {
+        width: 50px;
+        object-fit: contain;
+      }
+
+      .header-container-4,
+      .design-image-9 {
+        display: none;
+      }
+
+      /*		First Section		*/
+      .first-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 60px;
+
+        position: relative;
+        padding: 30px 50px 30px 30px;
+        margin: 0 65px;
+
+        background: #ffffff;
+        box-shadow: 0 13px 72px rgba(0, 0, 0, 0.07);
+        border-radius: 23px;
+      }
+
+      .first-section-container-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 20px 0;
+      }
+
+      .first-section-container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .first-section-container-3 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .first-section-container-4 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .first-section-container-5 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 5px;
+
+        white-space: nowrap;
+      }
+
+      .first-section-container-6 {
+        display: flex;
+        flex-grow: 1;
+        justify-content: end;
+        column-gap: 2px;
+      }
+
+      .first-section-container-7 {
+        display: flex;
+        justify-content: center;
+
+        padding-top: 25px;
+
+        border-top: 1px solid #e0e0e0;
+      }
+
+      .first-section-container-7 div {
+        max-height: 180px;
+        flex-grow: 1;
+      }
+
+      .first-section-container-7 div img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .first-section-container-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 35px;
+        flex-grow: 1;
+      }
+
+      .first-section-container-9 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        padding: 20px 30px 60px 15px;
+
+        color: #3d3d3d;
+        background: #f0f0f0;
+        border-radius: 9px;
+      }
+
+      .first-section-container-10 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 130px;
+      }
+
+      .first-section-container-11 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .first-section-container-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 3px;
+      }
+
+      .first-section-container-13 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+        column-gap: 20px;
+      }
+
+      .first-section-container-14 {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+      }
+
+      .first-section-title-1 {
+        font-weight: 700;
+        font-size: 30px;
+
+        color: #212121;
+      }
+
+      .first-section-title-2 {
+        font-family: VazirFd, serif;
+        font-weight: 700;
+        font-size: 18px;
+
+        color: #3d3d3d;
+      }
+
+      .first-section-span-1 {
+        font-weight: 400;
+        font-size: 12px;
+
+        color: #7bc74d;
+      }
+
+      .first-section-span-2 {
+        margin-bottom: -10px;
+
+        font-family: VazirFd, serif;
+        font-weight: 900;
+        font-size: 25px;
+        text-decoration-line: line-through;
+
+        color: #ff3030;
+      }
+
+      .first-section-span-3 {
+        font-family: VazirFd, serif;
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+
+        font-weight: 900;
+        font-size: 28px;
+
+        color: #222831;
+      }
+
+      .first-section-span-4 {
+        font-size: 15px;
+      }
+
+      .first-section-span-5 {
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .first-section-span-6 {
+        padding: 5px 5px 3px;
+        font-family: VazirFd, serif;
+        width: 50px;
+        text-align: center;
+
+        border: 1px solid #e7e7e7;
+        border-radius: 2px;
+      }
+
+      .first-section-span-6:focus {
+        border: 1px solid #e7e7e7;
+        outline: none;
+      }
+
+      .first-section-paragraph {
+        margin: 50px 0;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 45px;
+
+        text-align: justify;
+
+        color: #646464;
+      }
+
+      .first-section-ul {
+        list-style: none;
+        font-weight: 600;
+        font-size: 19px;
+        padding: 0;
+      }
+
+      .first-section-ul li {
+        padding: 3px 0;
+      }
+
+      .first-section-ul li i {
+        margin-left: 10px;
+
+        font-size: 14px;
+
+        color: #7bc74d;
+      }
+
+      .first-section-button-1 {
+        width: 92px;
+        height: 30px;
+
+        margin-left: 5px;
+
+        font-family: VazirFd, serif;
+        font-weight: 700;
+        font-size: 14px;
+
+        cursor: default !important;
+        border: none;
+        color: #ffffff;
+        background: #c9c9c9;
+        border-radius: 4px;
+      }
+
+      .first-section-button-2 {
+        width: 105px;
+        height: 29px;
+
+        font-family: VazirFd, serif;
+        font-weight: 700;
+        font-size: 14px;
+
+        border: none;
+        color: #ffffff;
+        background: #7bc74d;
+        border-radius: 4px;
+      }
+
+      .first-section-button-3 {
+        width: 58px;
+        height: 58px;
+
+        font-family: VazirFd, serif;
+        font-weight: 900;
+        font-size: 18px;
+
+        border: none;
+        color: #ffffff;
+        background: #ff3030;
+        border-radius: 5px;
+      }
+
+      .first-section-button-4 {
+        width: 199px;
+        height: 43px;
+
+        font-family: VazirFd, serif;
+        font-weight: 700;
+        font-size: 15px;
+
+        border: none;
+        color: #ffffff;
+        background: #7bc74d;
+        border-radius: 5px;
+      }
+
+      .first-section-icon-1 {
+        width: 18px;
+        cursor: pointer;
+      }
+
+      .first-section-icon-2:nth-last-child(5),
+      .first-section-icon-2:nth-last-child(4) {
+        filter: invert(31%) sepia(0%) saturate(30%) hue-rotate(187deg)
+          brightness(99%) contrast(82%);
+      }
+
+      .first-section-image-1 {
+        height: 360px;
+        object-fit: contain;
+      }
+
+      .first-section-image-3 {
+        position: absolute;
+        object-fit: fill;
+        z-index: -100;
+        bottom: -60px;
+        width: 95%;
+        max-height: 100%;
+      }
+
+      .design-image-14 {
+        position: absolute;
+        top: 620px;
+        right: 0;
+        width: 100%;
+        z-index: -100;
+      }
+
+      /*		Mobile		*/
+      .first-section-image-4,
+      .header-icon-5,
+      .first-section-span-7,
+      .second-section-container-3 {
+        display: none;
+      }
+
+      @media screen and (max-width: 1400px) {
+        nav {
+          height: 145px;
+        }
+
+        /*		First Section		*/
+        .first-section {
+          column-gap: 40px;
+        }
+
+        .first-section-container-6 {
+          white-space: nowrap;
+        }
+
+        .first-section-container-9 {
+          row-gap: 20px;
+
+          padding: 20px 30px 40px 15px;
+        }
+
+        .first-section-container-10 {
+          column-gap: 90px;
+        }
+
+        .first-section-container-7 div img {
+        }
+
+        .first-section-title-1 {
+          font-size: 24px;
+        }
+
+        .first-section-title-2 {
+          font-size: 16px;
+        }
+
+        .first-section-span-2 {
+          font-size: 22px;
+        }
+
+        .first-section-span-3 {
+          font-size: 25px;
+        }
+
+        .first-section-span-4 {
+          font-size: 12px;
+        }
+
+        .first-section-paragraph {
+          margin: 30px 0;
+
+          font-size: 14px;
+          line-height: 40px;
+        }
+
+        .first-section-ul {
+          font-size: 16px;
+        }
+
+        .first-section-ul li i {
+          margin-left: 5px;
+
+          font-size: 12px;
+        }
+
+        .first-section-button-1 {
+          width: 82px;
+          height: 25px;
+
+          font-size: 12px;
+        }
+
+        .first-section-button-2 {
+          width: 95px;
+          height: 25px;
+
+          font-size: 12px;
+        }
+
+        .first-section-button-3 {
+          width: 48px;
+          height: 48px;
+
+          font-size: 16px;
+        }
+
+        .first-section-button-4 {
+          width: 189px;
+          height: 40px;
+
+          font-size: 13px;
+        }
+
+        .first-section-image-1 {
+          height: 280px;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        nav {
+          height: 135px;
+
+          padding: 0 68px;
+        }
+
+        .header-container-2 {
+          width: 500px;
+
+          font-size: 14px;
+        }
+
+        .header-container-3 {
+          column-gap: 20px;
+        }
+
+        .header-span-1 {
+          font-size: 16px;
+        }
+
+        .header-li-active-line {
+          width: 28px;
+        }
+
+        .header-icon-1,
+        .header-icon-2 {
+          width: 20px;
+        }
+
+        .header-image {
+          width: 40px;
+        }
+
+        /*		First Section		*/
+        .first-section {
+          column-gap: 30px;
+          padding: 20px 30px 20px 20px;
+        }
+
+        .first-section-container-7 img {
+          /*width: 90px;*/
+        }
+
+        .first-section-container-9 {
+          padding: 20px 15px 40px;
+        }
+
+        .first-section-container-10 {
+          column-gap: 80px;
+        }
+
+        .first-section-title-1 {
+          font-size: 22px;
+        }
+
+        .first-section-title-2 {
+          font-size: 14px;
+        }
+
+        .first-section-span-1 {
+          font-size: 10px;
+        }
+
+        .first-section-span-2 {
+          font-size: 18px;
+        }
+
+        .first-section-span-3 {
+          font-size: 22px;
+        }
+
+        .first-section-span-4 {
+          font-size: 11px;
+        }
+
+        .first-section-paragraph {
+          font-size: 12px;
+          line-height: 30px;
+        }
+
+        .first-section-ul {
+          font-size: 14px;
+        }
+
+        .first-section-ul li i {
+          font-size: 11px;
+        }
+
+        .first-section-button-2 {
+          width: 85px;
+          height: 22px;
+
+          font-size: 11px;
+        }
+
+        .first-section-button-3 {
+          width: 38px;
+          height: 38px;
+
+          font-size: 14px;
+        }
+
+        .first-section-button-4 {
+          width: 150px;
+          height: 32px;
+
+          font-size: 13px;
+        }
+
+        .first-section-icon-1,
+        .first-section-icon-2 {
+          width: 16px;
+        }
+
+        .first-section-image-1 {
+          height: 200px;
+        }
+
+        .first-section-image-3 {
+          bottom: -45px;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        nav {
+          height: 120px;
+
+          padding: 0 44px 0 50px;
+        }
+
+        main {
+          padding: 60px 35px 50px 35px;
+        }
+
+        .header-container-2 {
+          width: 400px;
+
+          font-size: 12px;
+        }
+
+        .header-span-1 {
+          font-size: 13px;
+        }
+
+        .li-active .header-li-active-line {
+          width: 20px;
+        }
+
+        .header-icon-1,
+        .header-icon-2 {
+          width: 17px;
+        }
+
+        .header-image {
+          width: 30px;
+        }
+
+        /*		First Section		*/
+        .first-section {
+          column-gap: 20px;
+          padding: 20px 30px 20px 20px;
+          margin: 0;
+        }
+
+        .first-section-container-1 {
+          min-width: 210px;
+        }
+
+        .first-section-container-2 {
+          row-gap: 0;
+        }
+
+        .first-section-container-5 {
+          column-gap: 3px;
+        }
+
+        .first-section-container-7 {
+          padding-top: 15px;
+        }
+
+        .first-section-container-7 div {
+          /*padding: 0 5px 0;*/
+        }
+
+        .first-section-container-8 {
+          row-gap: 20px;
+        }
+
+        .first-section-container-9 {
+          padding: 20px 15px 0;
+        }
+
+        .first-section-container-10 {
+          column-gap: 0;
+        }
+
+        .first-section-title-1 {
+          font-size: 18px;
+        }
+
+        .first-section-title-2 {
+          font-size: 12px;
+        }
+
+        .first-section-span-1 {
+          font-size: 7px;
+        }
+
+        .first-section-span-2 {
+          font-size: 14px;
+        }
+
+        .first-section-span-3 {
+          font-size: 18px;
+        }
+
+        .first-section-span-4 {
+          font-size: 9px;
+        }
+
+        .first-section-paragraph {
+          font-size: 10px;
+          line-height: 25px;
+
+          margin: 10px 0 30px;
+        }
+
+        .first-section-button-1 {
+          width: 63px;
+          height: 22px;
+          font-size: 9px;
+        }
+
+        .first-section-button-2 {
+          width: 72px;
+          height: 20px;
+
+          font-size: 9px;
+        }
+
+        .first-section-button-3 {
+          width: 30px;
+          height: 30px;
+
+          font-size: 10px;
+        }
+
+        .first-section-button-4 {
+          width: 100px;
+          height: 25px;
+          font-size: 10px;
+        }
+
+        .first-section-ul {
+          font-size: 11px;
+        }
+
+        .first-section-ul li i {
+          font-size: 10px;
+        }
+
+        .first-section-icon-1,
+        .first-section-icon-2 {
+          width: 12px;
+        }
+
+        .first-section-image-1 {
+          height: 180px;
+        }
+
+        .first-section-image-3 {
+          bottom: -30px;
+        }
+
+        .design-image-14 {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        nav {
+          height: 100px;
+
+          padding: 0 25px 0 30px;
+        }
+
+        main {
+          padding: 60px 25px 40px 25px;
+        }
+
+        .header-container-2 {
+          width: 300px;
+
+          font-size: 10px;
+        }
+
+        .header-span-1 {
+          font-size: 11px;
+        }
+
+        .header-icon-1,
+        .header-icon-2 {
+          width: 14px;
+        }
+
+        .first-section {
+          padding: 20px 10px 15px 15px;
+        }
+
+        .first-section-image-1 {
+          height: 130px;
+        }
+
+        .first-section-title-1 {
+          font-size: 16px;
+        }
+
+        .first-section-button-1 {
+          width: 55px;
+          height: 20px;
+          font-size: 8px;
+          margin: 0;
+        }
+
+        .first-section-container-1 {
+          min-width: 150px;
+          padding: 10px 0;
+        }
+
+        .first-section-paragraph {
+          font-size: 9px;
+          line-height: 22px;
+        }
+
+        .first-section-container-6 {
+          column-gap: 1px;
+        }
+
+        .first-section-container-7 {
+          padding-top: 10px;
+        }
+
+        .first-section-container-7 img {
+          width: 55px;
+        }
+
+        .first-section-container-8 {
+          row-gap: 10px;
+        }
+
+        .first-section-title-2 {
+          font-size: 10px;
+        }
+
+        .first-section-button-2 {
+          width: 60px;
+          height: 18px;
+
+          font-size: 8px;
+        }
+
+        .first-section-container-9 {
+          padding: 10px 10px 0;
+        }
+
+        .first-section-ul {
+          font-size: 10px;
+        }
+
+        .first-section-ul li i {
+          font-size: 8px;
+        }
+
+        .first-section-span-2 {
+          font-size: 11px;
+        }
+
+        .first-section-span-3 {
+          font-size: 14px;
+        }
+
+        .first-section-span-4 {
+          font-size: 8px;
+        }
+
+        .first-section-container-5 {
+          column-gap: 2px;
+        }
+
+        .first-section-button-4 {
+          width: 80px;
+          height: 20px;
+
+          font-size: 8px;
+        }
+
+        .first-section-span-1 {
+          font-size: 5px;
+        }
+
+        .first-section-icon-1,
+        .first-section-icon-2 {
+          width: 9px;
+        }
+
+        .first-section-container-13 {
+          column-gap: 20px;
+        }
+
+        .first-section-container-14 {
+          column-gap: 6px;
+        }
+
+        .first-section-span-5 {
+          cursor: pointer;
+          font-size: 10px;
+        }
+
+        .first-section-span-6 {
+          padding: 3px 8px 1px;
+          font-size: 11px;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        nav {
+          height: 80px;
+        }
+
+        main {
+          padding: 60px 25px 30px 25px;
+        }
+
+        .header-container-2 {
+          width: 240px;
+
+          font-size: 9px;
+        }
+
+        .header-container-3 {
+          column-gap: 10px;
+        }
+
+        .header-span-1 {
+          font-size: 10px;
+        }
+
+        .header-image {
+          width: 25px;
+        }
+
+        .first-section {
+          column-gap: 15px;
+          padding: 20px;
+        }
+
+        .first-section-image-1 {
+          height: 100px;
+        }
+
+        .first-section-title-1 {
+          font-size: 14px;
+        }
+
+        .first-section-button-1 {
+          width: 48px;
+          height: 18px;
+          font-size: 7px;
+        }
+
+        .first-section-container-1 {
+          min-width: 120px;
+        }
+
+        .first-section-container-2 {
+          row-gap: 5px;
+        }
+
+        .first-section-paragraph {
+          font-size: 8px;
+          line-height: 18px;
+        }
+
+        .first-section-container-7 img {
+          width: 45px;
+        }
+
+        .first-section-title-2 {
+          font-size: 9px;
+        }
+
+        .first-section-button-2 {
+          width: 55px;
+          height: 16px;
+
+          font-size: 7px;
+        }
+
+        .first-section-ul {
+          font-size: 9px;
+        }
+
+        .first-section-ul li i {
+          font-size: 7px;
+        }
+
+        .first-section-span-2 {
+          font-size: 10px;
+        }
+
+        .first-section-span-3 {
+          font-size: 12px;
+          column-gap: 2px;
+        }
+
+        .first-section-span-4 {
+          font-size: 6px;
+        }
+
+        .first-section-container-5 {
+          column-gap: 2px;
+        }
+
+        .first-section-button-4 {
+          width: 60px;
+          height: 18px;
+
+          font-size: 6px;
+        }
+
+        .first-section-span-1 {
+          font-size: 4px;
+        }
+
+        .first-section-icon-1,
+        .first-section-icon-2 {
+          width: 7px;
+        }
+
+        .first-section-container-13 {
+          column-gap: 8px;
+        }
+
+        .first-section-span-5 {
+          font-size: 8px;
+        }
+
+        .first-section-span-6 {
+          padding: 1px 7px 0;
+          font-size: 9px;
+        }
+
+        .first-section-image-3 {
+          bottom: -25px;
+          width: 90%;
+          height: 200px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        nav {
+          height: 50px;
+          margin: 20px 15px 20px;
+          padding: 10px 13px;
+
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+          border-radius: 9px;
+        }
+
+        main {
+          padding: 0;
+          overflow-x: hidden;
+          background-color: #f1f1f1;
+        }
+
+        body {
+          background-color: #ffffff !important;
+        }
+
+        .header-container-1 {
+          flex-direction: row;
+          align-items: center;
+          column-gap: 7px;
+        }
+
+        .header-container-4 {
+          display: flex;
+          column-gap: 12px;
+        }
+
+        .header-span-1 {
+          margin: 0;
+          font-size: 14px;
+        }
+
+        .header-icon-3,
+        .header-icon-4,
+        .header-icon-5 {
+          width: 20px;
+        }
+
+        .header-icon-5 {
+          display: block;
+          margin-left: 15px;
+        }
+
+        .design-image-9 {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: -30px;
+        }
+
+        .header-container-2,
+        .header-container-3 {
+          display: none;
+        }
+
+        .first-section {
+          flex-direction: column;
+
+          padding: 30px 30px 0;
+          border-radius: 0;
+          background-color: #ffffff;
+          box-shadow: none;
+        }
+
+        .first-section-container-1 {
+          order: 1;
+          width: 100%;
+        }
+
+        .first-section-image-4 {
+          display: block;
+          order: 2;
+
+          width: 100%;
+          object-fit: contain;
+
+          margin: 40px 0 50px;
+        }
+
+        .first-section-container-8 {
+          order: 3;
+          width: 100%;
+          row-gap: 20px;
+
+          padding: 50px 0;
+
+          border-top: 1px solid #e0e0e0;
+          border-bottom: 1px solid #e0e0e0;
+        }
+
+        .first-section-container-3 {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          row-gap: 10px;
+
+          padding: 0 0 30px;
+
+          border-bottom: 1px solid #e0e0e0;
+        }
+
+        .first-section-container-11,
+        .first-section-container-13 {
+          justify-content: center;
+        }
+
+        .first-section-span-3 {
+          font-size: 24px;
+          column-gap: 5px;
+        }
+
+        .first-section-span-4 {
+          font-size: 14px;
+        }
+
+        .first-section-button-4 {
+          width: 270px;
+          height: 40px;
+
+          font-size: 14px;
+
+          border-radius: 35px;
+        }
+
+        .first-section-title-1 {
+          font-size: 22px;
+        }
+
+        .first-section-span-7 {
+          display: inline;
+
+          font-weight: 600;
+          font-size: 12px;
+
+          color: #a3a3a3;
+        }
+
+        .first-section-image-3 {
+          display: none;
+        }
+
+        /*		!= Mobile		*/
+        .first-section-image-1,
+        .first-section-container-4,
+        .first-section-button-1,
+        .first-section-paragraph,
+        .first-section-container-7,
+        .first-section-container-9,
+        .first-section-span-2,
+        .first-section-button-3,
+        .first-section-container-14,
+        .second-section-container-2,
+        .third-section {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        nav {
+          height: 45px;
+          margin-bottom: 30px;
+        }
+
+        main {
+          padding: 0;
+          overflow-x: hidden;
+        }
+
+        .header-container-1 {
+          column-gap: 5px;
+        }
+
+        .header-container-4 {
+          column-gap: 10px;
+        }
+
+        .header-span-1 {
+          font-size: 12px;
+        }
+
+        .header-icon-3,
+        .header-icon-4,
+        .header-icon-5 {
+          width: 15px;
+        }
+
+        .first-section {
+          padding: 0;
+        }
+      }
+    </style>
+    <link
+      rel="preload"
+      href="../../src/font/fonts.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="prefetch"
+      href="../../public/Logo.ico"
+      sizes="32x32"
+      onload="this.rel='icon'"
+    />
+    <link
+      rel="prefetch"
+      href="../../public/Logo.ico"
+      sizes="32x32"
+      onload="this.rel='apple-touch-icon'"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="design-image-9"
+        src="../../src/assets/images/Rectangle%2022.png"
+        alt=""
+      />
+      <nav id="nav">
+        <div class="header-container-1">
+          <img
+            class="header-icon-5"
+            src="../../src/assets/icons/mobile-Menu.svg"
+            alt=""
+          />
+          <img
+            class="header-image"
+            src="../../src/assets/images/Layer-7.png"
+            alt=""
+          />
+          <span class="header-span-1"> حیـات <span>سـبــز</span> </span>
+        </div>
+        <ul class="header-container-2">
+          <li class="header-li">
+            <a href="../../index.html">
+              صفحه اصلی
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+          <li class="header-li li-active">
+            <a href="./index.html">
+              محصولات
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="../category/index.html">
+              دسته بندی
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="../aboutUs/index.html">
+              درباره ما
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="../contactUs/index.html">
+              تماس با ما
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+        </ul>
+        <div class="header-container-3">
+          <img
+            class="header-icon-1"
+            src="../../src/assets/icons/search-normal.svg"
+            alt=""
+          />
+          <a href="../cart/index.html"
+            ><img
+              class="header-icon-2"
+              src="../../src/assets/icons/shopping-cart.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="header-container-4">
+          <img
+            class="header-icon-3"
+            src="../../src/assets/icons/mobiel-Search.svg"
+            alt=""
+          />
+          <img
+            class="header-icon-4"
+            src="../../src/assets/icons/mobile-Shop.svg"
+            alt=""
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <img
+        class="design-image-14"
+        src="../../src/assets/images/items%202.png"
+        alt=""
+      />
+      <section class="first-section">
+        <img
+          class="first-section-image-1"
+          src="../../src/assets/images/Group%202931.png"
+          alt=""
+        />
+        <img
+          class="first-section-image-3"
+          src="../../src/assets/images/Rectangle%2017.png"
+          alt=""
+        />
+        <img
+          class="first-section-image-4"
+          src="../../src/assets/images/Group%2035.png"
+          alt=""
+        />
+        <div class="first-section-container-1">
+          <div class="first-section-container-2">
+            <div class="first-section-container-3">
+              <span class="first-section-title-1"> کود معدنی </span>
+              <span class="first-section-span-7">
+                یک توضیحات کوتاه برای این محصول
+              </span>
+              <button class="first-section-button-1">مناسب گیاه</button>
+            </div>
+            <div class="first-section-container-4">
+              <div class="first-section-container-5">
+                <img
+                  class="first-section-icon-1"
+                  src="../../src/assets/icons/heart.svg"
+                  alt=""
+                />
+                <span class="first-section-span-1"
+                  >افزودن این محصول به لیست به علاقه مندی ها</span
+                >
+              </div>
+              <div class="first-section-container-6">
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <p class="first-section-paragraph">
+            ستون و سطرآنچنان که لازم است استفاده از طراحان گرافیک است، چاپگرها و
+            متون بلکه روزنامه و مجله در لورم ایپسوم متن ساختگی با تولید سادگی
+            نامفهوم از صنعت چاپ، و با
+          </p>
+          <div class="first-section-container-7">
+            <div>
+              <img src="../../src/assets/images/Group%202935.png" alt="" />
+            </div>
+            <div>
+              <img src="../../src/assets/images/Group%202935.png" alt="" />
+            </div>
+            <div>
+              <img src="../../src/assets/images/Group%202935.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="first-section-container-8">
+          <div class="first-section-container-9">
+            <div class="first-section-container-10">
+              <span class="first-section-title-2"> مشخصـات </span>
+              <button class="first-section-button-2">موجود در انبار</button>
+            </div>
+            <ul class="first-section-ul">
+              <li>
+                <i class="fas fa-solid fa-square"></i>
+                دریـل برقی
+              </li>
+              <li>
+                <i class="fas fa-solid fa-square"></i>
+                دریـل برقی
+              </li>
+              <li>
+                <i class="fas fa-solid fa-square"></i>
+                دریـل برقی
+              </li>
+              <li>
+                <i class="fas fa-solid fa-square"></i>
+                دریـل برقی
+              </li>
+            </ul>
+          </div>
+          <div class="first-section-container-11">
+            <div class="first-section-container-12">
+              <span class="first-section-span-2"> 250,000 </span>
+              <span class="first-section-span-3">
+                199,000
+                <span class="first-section-span-4"> تومان </span>
+              </span>
+            </div>
+            <button class="first-section-button-3">50%</button>
+          </div>
+          <div class="first-section-container-13">
+            <div class="first-section-container-14">
+              <span onclick="changeCount(true)" class="first-section-span-5"
+                >+</span
+              >
+              <input
+                onblur="if(this.value === ''){this.value= 1}"
+                oninput="this.value = this.value.replace(/[^1-9.]/g, '');"
+                value="1"
+                id="productCount"
+                class="first-section-span-6"
+              />
+              <span onclick="changeCount(false)" class="first-section-span-5"
+                >-</span
+              >
+            </div>
+            <button class="first-section-button-4">اضافه به سبد خرید</button>
+          </div>
+        </div>
+      </section>
+      <section class="second-section">
+        <img
+          class="second-section-image-1"
+          src="../../src/assets/images/Rectangle%2060.png"
+          alt=""
+        />
+        <div class="second-section-container-1">
+          <span class="second-section-title-1"> توضیحـات کامـل محصـول </span>
+          <div class="second-section-container-2">
+            <span class="second-section-span-1 second-section-span-active">
+              توضیحات
+              <span class="second-section-span-active-line"></span>
+            </span>
+            <span class="second-section-span-1">
+              ویژگی ها
+              <span class="second-section-span-active-line"></span>
+            </span>
+            <span class="second-section-span-1">
+              نظرات کاربران
+              <span class="second-section-span-active-line"></span>
+            </span>
+          </div>
+        </div>
+        <p class="second-section-paragraph-1">
+          افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی،
+          و فرهنگ پیشرو در زبان فارسی ایجاد کرد . تکنولوژی مورد نیاز، و
+          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+          طلبد ، تا با نـــــــــــــرم لورم ایپسوم متن ساختگی با تولید سادگی
+          نامفهوم
+          <br />
+          از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+          روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+          فعلــــــیافزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+          طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد . تکنولوژی مورد
+          نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+          زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان
+          را می طلبد ، تا با نـــــــــــــرم لورم ایپسوم متن ساختگی با تولید
+          سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+          و متون بلکه روزنامه و مجله در ستون و
+          <br />
+          سطرآنچنان که لازم است، و برای شرایط فعلــــــیافزارها شناخت بیشتری را
+          برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+          فارسی ایجاد کرد . تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+          ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+          آینده، شناخت فراوان جامعه و متخصصان را می طلبد ، تا با
+          نـــــــــــــرم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+          چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+          مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلــــــی
+        </p>
+        <div class="second-section-container-3">
+          <span class="second-section-title-2"> ویژگی ها </span>
+          <ul class="second-section-ul">
+            <li>
+              <i class="fas fa-solid fa-square"></i>
+              کود درجه یک
+            </li>
+            <li>
+              <i class="fas fa-solid fa-square"></i>
+              کود درجه یک
+            </li>
+            <li>
+              <i class="fas fa-solid fa-square"></i>
+              کود درجه یک
+            </li>
+          </ul>
+          <p class="second-section-paragraph-2">
+            ستون و سطرآنچنان که لازم است استفاده از طراحان گرافیک است، چاپگرها و
+            متون بلکه روزنامه و مجله در لورم ایپسوم متن ساختگی با تولید سادگی
+            نامفهوم از صنعت چاپ، و با
+          </p>
+        </div>
+      </section>
+      <section class="third-section">
+        <span class="third-section-title-1"> نظرات کاربران </span>
+        <div class="third-section-container-1">
+          <div class="third-section-container-2">
+            <img
+              class="third-section-image-1"
+              src="../../src/assets/images/Rectangle%20172.png"
+              alt=""
+            />
+            <img
+              class="third-section-image-2"
+              src="../../src/assets/images/Vector%209.png"
+              alt=""
+            />
+            <div class="third-section-container-3">
+              <div class="third-section-container-4">
+                <span class="third-section-span-1"> سعید رضویان </span>
+                <div class="third-section-container-5">
+                  <img
+                    class="first-section-icon-2"
+                    src="../../src/assets/icons/star.svg"
+                    alt=""
+                  />
+                  <img
+                    class="first-section-icon-2"
+                    src="../../src/assets/icons/star.svg"
+                    alt=""
+                  />
+                  <img
+                    class="first-section-icon-2"
+                    src="../../src/assets/icons/star.svg"
+                    alt=""
+                  />
+                  <img
+                    class="first-section-icon-2"
+                    src="../../src/assets/icons/star.svg"
+                    alt=""
+                  />
+                  <img
+                    class="first-section-icon-2"
+                    src="../../src/assets/icons/star.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <span class="third-section-span-2"> خریدار محصول </span>
+            </div>
+            <div class="third-section-container-6">
+              <button class="third-section-button-1">سه روز پیش</button>
+              <div class="third-section-container-7">
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+                <img
+                  class="first-section-icon-2"
+                  src="../../src/assets/icons/star.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <p class="third-section-paragraph">
+            افزارها شناختخصوص طراحان خلاقع با هدف بهبود ابزارهای کاربررصد گذشته
+            حال و آینده، شناخت فراوان جامع طلبرم ایپسوم متن ساختگی با تولید
+            سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+            و برای شرایط فعلــــــی
+          </p>
+        </div>
+      </section>
+      <section class="fifth-section">
+        <img
+          class="second-section-image-1"
+          src="../../src/assets/images/Rectangle%2060.png"
+          alt=""
+        />
+        <div class="fifth-section-container-1">
+          <span class="fifth-section-title-1">
+            تجربه یا نظر خود را درباره این محصول برای ما بنویسید
+            <span>
+              دیگران را با نوشتن نظرات خود، برای انتخاب این محصول راهنمایی
+              کنید.</span
+            >
+          </span>
+          <div class="fifth-section-container-2">.</div>
+        </div>
+        <div class="fifth-section-container-2">
+          <div class="global-2-container-1">
+            <img src="../../src/assets/icons/user.svg" alt="" />
+            <input placeholder="نام خود را وارد نمایید" />
+          </div>
+          <div class="global-2-container-1">
+            <img src="../../src/assets/icons/sms.svg" alt="" />
+            <input placeholder="ایمیل خود را وارد نمایید" />
+          </div>
+        </div>
+        <div class="fifth-section-container-3">
+          <div class="global-2-container-1">
+            <img src="../../src/assets/icons/edit.svg" alt="" />
+            <textarea
+              placeholder="متن دیدگاه خود را بنویسید..."
+              rows="8"
+            ></textarea>
+          </div>
+        </div>
+        <div class="fifth-section-paragraph-1">
+          <div>
+            لطفا پیش از ارسال نظر، خلاصه قوانین زیر را مطالعه کنید: فارسی
+            بنویسید و از کیبورد فارسی استفاده کنید. بهتر است از فضای خالی
+            (Space) بیش‌از‌حدِ معمول استفاده نکنید و از کشیدن حروف یا کلمات با
+            صفحه‌کلید بپرهیزید. نظرات خود را براساس تجربه و استفاده‌ی عملی و با
+            دقت به نکات فنی ارسال کنید؛ بدون تعصب به محصول خاص، مزایا و معایب را
+            بازگو کنید و بهتر است از ارسال نظرات چندکلمه‌‌ای خودداری کنید. بهتر
+            است در نظرات خود از تمرکز روی عناصر متغیر مثل قیمت، پرهیز کنید. به
+            کاربران و سایر اشخاص احترام بگذارید. پیام‌هایی که شامل محتوای
+            توهین‌آمیز و کلمات نامناسب باشند، حذف می‌شوند
+          </div>
+        </div>
+        <div class="fifth-section-container-4">
+          <span>
+            <img
+              onclick="{
+                    this.src.includes('unCheck.png')
+                    ? this.src = '../../src/assets/icons/check.svg'
+                     : this.src = '../../src/assets/icons/unCheck.png';
+                }"
+              src="../../src/assets/icons/check.svg"
+              alt=""
+            />
+            ذخیره نام و ایمیل من در مرورگر برای زمانی که دوباره دیدگاهی
+            می‌نویسم.
+          </span>
+          <button class="fifth-button-1">
+            <img src="../../src/assets/icons/Frame.svg" alt="" />
+            ثبت دیدگاه
+          </button>
+        </div>
+      </section>
+      <section class="forth-section">
+        <div class="global-1-container-1">
+          <span class="global-1-title-1">محصولـات مشابـه</span>
+          <div>
+            <img
+              class="slider-first-button"
+              src="../../src/assets/icons/arrow-right.svg"
+              alt=""
+            />
+            <img
+              class="slider-second-button"
+              src="../../src/assets/icons/arrow-right.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="global-1-container-2">
+          <div class="global-1-item-container-1">
+            <div class="global-1-item-container-3">
+              <img
+                class="global-1-item-image-2"
+                src="../../src/assets/icons/archive-tick.svg"
+                alt=""
+              />
+              <img
+                class="global-1-item-image-1"
+                src="../../src/assets/images/ascsaewf%201.png"
+                alt=""
+              />
+              <div class="global-1-item-container-4">
+                <div class="global-1-item-container-5">
+                  <span class="global-1-item-span-3">کود معدنی</span>
+                  <span class="global-1-item-span-4"
+                    >مخصوص گیاهان گلخانه ای</span
+                  >
+                </div>
+                <img
+                  class="global-1-item-image-3"
+                  src="../../src/assets/icons/heart.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="global-1-item-container-2">
+              <span class="global-1-item-span-1">
+                250,000
+                <span class="global-1-item-span-2"> تومان </span>
+              </span>
+              <button class="global-1-item-button">خرید آنلاین</button>
+            </div>
+          </div>
+          <div class="global-1-item-container-1">
+            <div class="global-1-item-container-3">
+              <img
+                class="global-1-item-image-2"
+                src="../../src/assets/icons/archive-tick.svg"
+                alt=""
+              />
+              <img
+                class="global-1-item-image-1"
+                src="../../src/assets/images/ascsaewf%201.png"
+                alt=""
+              />
+              <div class="global-1-item-container-4">
+                <div class="global-1-item-container-5">
+                  <span class="global-1-item-span-3">کود معدنی</span>
+                  <span class="global-1-item-span-4"
+                    >مخصوص گیاهان گلخانه ای</span
+                  >
+                </div>
+                <img
+                  class="global-1-item-image-3"
+                  src="../../src/assets/icons/heart.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="global-1-item-container-2">
+              <span class="global-1-item-span-1">
+                250,000
+                <span class="global-1-item-span-2"> تومان </span>
+              </span>
+              <button class="global-1-item-button">خرید آنلاین</button>
+            </div>
+          </div>
+          <div class="global-1-item-container-1">
+            <div class="global-1-item-container-3">
+              <img
+                class="global-1-item-image-2"
+                src="../../src/assets/icons/archive-tick.svg"
+                alt=""
+              />
+              <img
+                class="global-1-item-image-1"
+                src="../../src/assets/images/ascsaewf%201.png"
+                alt=""
+              />
+              <div class="global-1-item-container-4">
+                <div class="global-1-item-container-5">
+                  <span class="global-1-item-span-3">کود معدنی</span>
+                  <span class="global-1-item-span-4"
+                    >مخصوص گیاهان گلخانه ای</span
+                  >
+                </div>
+                <img
+                  class="global-1-item-image-3"
+                  src="../../src/assets/icons/heart.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="global-1-item-container-2">
+              <span class="global-1-item-span-1">
+                250,000
+                <span class="global-1-item-span-2"> تومان </span>
+              </span>
+              <button class="global-1-item-button">خرید آنلاین</button>
+            </div>
+          </div>
+          <div class="global-1-item-container-1">
+            <div class="global-1-item-container-3">
+              <img
+                class="global-1-item-image-2"
+                src="../../src/assets/icons/archive-tick.svg"
+                alt=""
+              />
+              <img
+                class="global-1-item-image-1"
+                src="../../src/assets/images/ascsaewf%201.png"
+                alt=""
+              />
+              <div class="global-1-item-container-4">
+                <div class="global-1-item-container-5">
+                  <span class="global-1-item-span-3">کود معدنی</span>
+                  <span class="global-1-item-span-4"
+                    >مخصوص گیاهان گلخانه ای</span
+                  >
+                </div>
+                <img
+                  class="global-1-item-image-3"
+                  src="../../src/assets/icons/heart.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="global-1-item-container-2">
+              <span class="global-1-item-span-1">
+                250,000
+                <span class="global-1-item-span-2"> تومان </span>
+              </span>
+              <button class="global-1-item-button">خرید آنلاین</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container-1">
+        <span class="footer-title-1"> با خیال راحت خرید کنید </span>
+        <div class="footer-container-2">
+          <div class="footer-item-1-container-1">
+            <img
+              class="footer-item-1-icon"
+              src="../../src/assets/icons/card-pos.svg"
+              alt=""
+            />
+            <div class="footer-item-1-container-2">
+              <span class="footer-item-1-span-1"> روش پرداخت </span>
+              <span class="footer-item-1-span-2"> کلیه کارت های شتاب </span>
+            </div>
+          </div>
+          <div class="footer-item-1-container-1">
+            <img
+              class="footer-item-1-icon"
+              src="../../src/assets/icons/box-tick.svg"
+              alt=""
+            />
+            <div class="footer-item-1-container-2">
+              <span class="footer-item-1-span-1"> پست رایگان </span>
+              <span class="footer-item-1-span-2">
+                خرید بالای 100 هزار تومان
+              </span>
+            </div>
+          </div>
+          <div class="footer-item-1-container-1">
+            <img
+              class="footer-item-1-icon"
+              src="../../src/assets/icons/box-tick.svg"
+              alt=""
+            />
+            <div class="footer-item-1-container-2">
+              <span class="footer-item-1-span-1"> پست رایگان </span>
+              <span class="footer-item-1-span-2">
+                خرید بالای 100 هزار تومان
+              </span>
+            </div>
+          </div>
+          <div class="footer-item-1-container-1">
+            <img
+              class="footer-item-1-icon"
+              src="../../src/assets/icons/card-pos.svg"
+              alt=""
+            />
+            <div class="footer-item-1-container-2">
+              <span class="footer-item-1-span-1"> روش پرداخت </span>
+              <span class="footer-item-1-span-2"> کلیه کارت های شتاب </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container-3">
+        <div class="footer-container-4">
+          <div class="footer-container-5">
+            <img
+              class="footer-image-1"
+              src="../../src/assets/images/Layer-7.png"
+              alt=""
+            />
+            <div class="footer-container-6">
+              <span class="footer-title-2"> حیـات <span>سـبــز</span> </span>
+              <span class="footer-title-3">
+                بزرگترین شرکت فروش کود در ایران
+              </span>
+            </div>
+          </div>
+          <div class="footer-container-7">
+            <span class="footer-span-1">
+              شیراز بعد از پل صنایع، شهرک باهنر کوچه 23 فروشگاه بزرگ حیات سبز
+            </span>
+            <span class="footer-span-2">
+              تلفن تماس
+              <span class="footer-span-3"> 4566 123 0917 - 2233 421 0713 </span>
+            </span>
+          </div>
+        </div>
+        <div class="footer-line-1"></div>
+        <div class="footer-container-8">
+          <div class="footer-container-9">
+            <div class="footer-item-2-container-1">
+              <span class="footer-item-2-title"> دسترسی سریع </span>
+              <ul class="footer-item-2-ul">
+                <li class="footer-item-2-li">تماس با ما</li>
+                <li class="footer-item-2-li">راهنمای خرید</li>
+                <li class="footer-item-2-li">پیگیری سفارش</li>
+              </ul>
+            </div>
+            <div class="footer-item-2-container-1">
+              <span class="footer-item-2-title"> پرسش و پاسخ </span>
+              <ul class="footer-item-2-ul">
+                <li class="footer-item-2-li">تماس با ما</li>
+                <li class="footer-item-2-li">راهنمای خرید</li>
+                <li class="footer-item-2-li">پیگیری سفارش</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-line-1"></div>
+          <div class="footer-container-10">
+            <span class="footer-title-4">مجوز ها</span>
+            <span class="footer-span-4">نماد اعتماد و مجوز صنعت معدن</span>
+            <img
+              class="footer-image-2"
+              src="../../src/assets/images/logo-anjooman-senfi%201.png"
+              alt=""
+            />
+            <img
+              class="footer-image-2"
+              src="../../src/assets/images/samandehi-for-poponik%201.png"
+              alt=""
+            />
+            <img
+              class="footer-image-2"
+              src="../../src/assets/images/1-min-6-250x230%201.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer-container-11">
+        تمام حقوق متعلق به شرکت حیات سبز میباشد
+      </div>
+    </footer>
+    <script rel="preload" async src="../../src/utility/breakpoints.js"></script>
+    <script rel="preload" async src="script.js"></script>
+    <script rel="preload" async src="../../src/js/script.js"></script>
+    <script
+      rel="preload"
+      async
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/488d7f94e4.js"
+    ></script>
+    <script
+      rel="preload"
+      async
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-

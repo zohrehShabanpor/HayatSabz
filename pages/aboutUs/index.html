@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حیـات سـبــز - محصولات</title>
+    <link
+      rel="preload"
+      href="../../src/font/fonts.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <style>
+      header {
+        position: relative;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 155px;
+        position: relative;
+        overflow-x: hidden !important;
+
+        padding: 0 65px 0 60px;
+
+        background-color: #ffffff;
+        box-shadow: 0 9px 34px rgba(0, 0, 0, 0.04);
+      }
+
+      body {
+        background-color: #f7f7f7 !important;
+        font-weight: 300 !important;
+        direction: rtl !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
+        font-family: YekanBakh, serif !important;
+      }
+
+      main {
+        padding: 0 0 180px;
+        position: relative;
+      }
+
+      .header-container-1 {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+      }
+
+      .header-container-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 550px;
+
+        margin: 12px 0 0;
+        padding: 0;
+
+        list-style: none;
+        font-family: VazirFd, serif;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      .header-container-3 {
+        display: flex;
+        column-gap: 25px;
+      }
+
+      .header-span-1 {
+        font-weight: 600;
+        font-size: 30px;
+
+        color: #222831;
+      }
+
+      .header-span-1 span {
+        color: #7bc74d;
+      }
+
+      .header-li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 8px;
+
+        height: 100%;
+
+        color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+
+      .header-li :hover {
+        color: #000000;
+      }
+
+      .li-active {
+        font-weight: 700;
+      }
+
+      .header-li-active-line {
+        width: 32px;
+        height: 2px;
+        background-color: #a3f571;
+        visibility: hidden;
+      }
+
+      .li-active .header-li-active-line {
+        visibility: visible;
+      }
+
+      .header-icon-1,
+      .header-icon-2 {
+        cursor: pointer;
+        width: 23px;
+      }
+
+      .header-image {
+        width: 50px;
+        object-fit: contain;
+      }
+
+      .header-container-4,
+      .design-image-9 {
+        display: none;
+      }
+
+      /*		First Section		*/
+
+      .first-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 350px;
+        position: relative;
+      }
+
+      .first-section-container-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: #ffffff;
+        z-index: 2;
+      }
+
+      .first-section-image-1 {
+        position: absolute;
+        object-fit: contain;
+        height: 280px;
+        bottom: calc(50% - 140px);
+        z-index: 2;
+      }
+
+      .first-section-image-2 {
+        position: absolute;
+        object-fit: contain;
+        height: 240px;
+        bottom: calc(50% - 120px);
+        z-index: 1;
+      }
+
+      .first-section-span-1 {
+        font-weight: 900;
+        font-size: 60px;
+        height: 80px;
+      }
+
+      .first-section-span-1 span {
+        color: #7bc74d;
+      }
+
+      .first-section-span-2 {
+        font-weight: 600;
+        font-size: 34px;
+      }
+
+      .design-image-1 {
+        background-image: url("../../src/assets/images/Group 94.png");
+        background-repeat: round;
+        height: 475px;
+        width: 100%;
+        background-color: #393e46;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .design-image-2 {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 0;
+      }
+
+      /*		Mobile		*/
+      .header-icon-5 {
+        display: none;
+      }
+
+      @media screen and (max-width: 1400px) {
+        nav {
+          height: 145px;
+        }
+      }
+
+      @media screen and (max-width: 1200px) {
+        nav {
+          height: 135px;
+
+          padding: 0 68px;
+        }
+
+        .header-container-2 {
+          width: 500px;
+
+          font-size: 14px;
+        }
+
+        .header-container-3 {
+          column-gap: 20px;
+        }
+
+        .header-span-1 {
+          font-size: 16px;
+        }
+
+        .header-li-active-line {
+          width: 28px;
+        }
+
+        .header-icon-1,
+        .header-icon-2 {
+          width: 20px;
+        }
+
+        .header-image {
+          width: 40px;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        nav {
+          height: 120px;
+
+          padding: 0 44px 0 50px;
+        }
+
+        main {
+        }
+
+        .header-container-2 {
+          width: 400px;
+
+          font-size: 12px;
+        }
+
+        .header-span-1 {
+          font-size: 13px;
+        }
+
+        .li-active .header-li-active-line {
+          width: 20px;
+        }
+
+        .header-icon-1,
+        .header-icon-2 {
+          width: 17px;
+        }
+
+        .header-image {
+          width: 30px;
+        }
+
+        .design-image-2 {
+          top: 130px;
+        }
+
+        .first-section {
+          height: 300px;
+        }
+
+        .first-section-image-1 {
+          height: 240px;
+          bottom: calc(50% - 120px);
+        }
+
+        .first-section-image-2 {
+          height: 200px;
+          bottom: calc(50% - 100px);
+        }
+
+        .first-section-span-1 {
+          font-size: 50px;
+          height: 60px;
+        }
+
+        .first-section-span-2 {
+          font-size: 28px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        nav {
+          height: 100px;
+
+          padding: 0 25px 0 30px;
+        }
+
+        main {
+        }
+
+        .header-container-2 {
+          width: 300px;
+
+          font-size: 10px;
+        }
+
+        .header-span-1 {
+          font-size: 11px;
+        }
+
+        .header-icon-1,
+        .header-icon-2 {
+          width: 14px;
+        }
+
+        .design-image-1 {
+          height: 350px;
+        }
+
+        .first-section {
+          height: 250px;
+        }
+
+        .first-section-image-1 {
+          height: 200px;
+          bottom: calc(50% - 100px);
+        }
+
+        .first-section-image-2 {
+          height: 160px;
+          bottom: calc(50% - 80px);
+        }
+
+        .first-section-span-1 {
+          font-size: 45px;
+        }
+
+        .first-section-span-2 {
+          font-size: 24px;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        nav {
+          height: 80px;
+        }
+
+        main {
+        }
+
+        .header-container-2 {
+          width: 240px;
+
+          font-size: 9px;
+        }
+
+        .header-container-3 {
+          column-gap: 10px;
+        }
+
+        .header-span-1 {
+          font-size: 10px;
+        }
+
+        .header-image {
+          width: 25px;
+        }
+
+        .first-section {
+          height: 220px;
+        }
+
+        .design-image-1 {
+          height: 300px;
+        }
+
+        .first-section-image-1 {
+          height: 180px;
+          bottom: calc(50% - 90px);
+        }
+
+        .first-section-image-2 {
+          height: 140px;
+          bottom: calc(50% - 70px);
+        }
+
+        .first-section-span-1 {
+          font-size: 40px;
+          height: 55px;
+        }
+
+        .first-section-span-2 {
+          font-size: 22px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        nav {
+          height: 50px;
+          margin: 20px 15px 50px;
+          padding: 10px 13px;
+
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+          border-radius: 9px;
+        }
+
+        main {
+          padding: 0 0 50px;
+          overflow-x: hidden;
+          background-color: #f6f6f6;
+        }
+
+        body {
+          background-color: #ffffff !important;
+        }
+
+        .header-container-1 {
+          flex-direction: row;
+          align-items: center;
+          column-gap: 7px;
+        }
+
+        .header-container-4 {
+          display: flex;
+          column-gap: 12px;
+        }
+
+        .header-span-1 {
+          margin: 0;
+          font-size: 14px;
+        }
+
+        .header-icon-3,
+        .header-icon-4,
+        .header-icon-5 {
+          width: 20px;
+        }
+
+        .header-icon-5 {
+          display: block;
+          margin-left: 15px;
+        }
+
+        .design-image-9 {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: -30px;
+        }
+
+        .header-container-2,
+        .header-container-3 {
+          display: none;
+        }
+
+        /*		!= Mobile		*/
+        .design-image-2 {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        nav {
+          height: 45px;
+          margin-bottom: 30px;
+        }
+
+        main {
+          padding: 0;
+          overflow-x: hidden;
+        }
+
+        .header-container-1 {
+          column-gap: 5px;
+        }
+
+        .header-container-4 {
+          column-gap: 10px;
+        }
+
+        .header-span-1 {
+          font-size: 12px;
+        }
+
+        .header-icon-3,
+        .header-icon-4,
+        .header-icon-5 {
+          width: 15px;
+        }
+
+        .first-section {
+          padding: 0;
+        }
+      }
+    </style>
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="prefetch"
+      href="../../public/Logo.ico"
+      sizes="32x32"
+      onload="this.rel='icon'"
+    />
+    <link
+      rel="prefetch"
+      href="../../public/Logo.ico"
+      sizes="32x32"
+      onload="this.rel='apple-touch-icon'"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        class="design-image-9"
+        src="../../src/assets/images/Rectangle%2022.png"
+        alt=""
+      />
+      <nav id="nav">
+        <div class="header-container-1">
+          <img
+            class="header-icon-5"
+            src="../../src/assets/icons/mobile-Menu.svg"
+            alt=""
+          />
+          <img
+            class="header-image"
+            src="../../src/assets/images/Layer-7.png"
+            alt=""
+          />
+          <span class="header-span-1"> حیـات <span>سـبــز</span> </span>
+        </div>
+        <ul class="header-container-2">
+          <li class="header-li">
+            <a href="../../index.html">
+              صفحه اصلی
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="../product/index.html">
+              محصولات
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="../category/index.html">
+              دسته بندی
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+          <li class="header-li li-active">
+            <a href="./index.html">
+              درباره ما
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="../contactUs/index.html">
+              تماس با ما
+              <div class="header-li-active-line"></div>
+            </a>
+          </li>
+        </ul>
+        <div class="header-container-3">
+          <img
+            class="header-icon-1"
+            src="../../src/assets/icons/search-normal.svg"
+            alt=""
+          />
+          <a href="../cart/index.html"
+            ><img
+              class="header-icon-2"
+              src="../../src/assets/icons/shopping-cart.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="header-container-4">
+          <img
+            class="header-icon-3"
+            src="../../src/assets/icons/mobiel-Search.svg"
+            alt=""
+          />
+          <img
+            class="header-icon-4"
+            src="../../src/assets/icons/mobile-Shop.svg"
+            alt=""
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="design-image-1"></div>
+      <img
+        class="design-image-2"
+        src="../../src/assets/images/items%202.png"
+        alt=""
+      />
+      <section class="first-section">
+        <img
+          class="first-section-image-1"
+          src="../../src/assets/images/25-253722_object-plant-1-plant-top-view-png%201.png"
+          alt=""
+        />
+        <img
+          class="first-section-image-2"
+          src="../../src/assets/images/Rectangle%2049.png"
+          alt=""
+        />
+        <div class="first-section-container-1">
+          <span class="first-section-span-1">شرکت حیات <span>سبز</span></span>
+          <span class="first-section-span-2"
+            >بزرگترین شرکت فروش کود در ایران</span
+          >
+        </div>
+      </section>
+      <section class="second-section">
+        <img
+          class="second-section-image-1"
+          src="../../src/assets/images/Rectangle%2060.png"
+          alt=""
+        />
+        <div class="second-section-container-1">
+          <span class="second-section-title-2"> درباره ما </span>
+          <span class="second-section-title-1">
+            <span> درباره ما </span>
+            شرکت حیات
+            <span>سبز</span>
+          </span>
+          <button class="second-section-button">تماس با ما</button>
+        </div>
+        <p class="second-section-paragraph-1">
+          افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی،
+          و فرهنگ پیشرو در زبان فارسی ایجاد کرد . تکنولوژی مورد نیاز، و
+          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+          در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+          طلبد ، تا با نـــــــــــــرم لورم ایپسوم متن ساختگی با تولید سادگی
+          نامفهوم
+          <br />
+          از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+          روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+          فعلــــــیافزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+          طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد . تکنولوژی مورد
+          نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای
+          زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان
+          را می طلبد ، تا با نـــــــــــــرم لورم ایپسوم متن ساختگی با تولید
+          سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+          و متون بلکه روزنامه و مجله در ستون و
+          <br />
+          سطرآنچنان که لازم است، و برای شرایط فعلــــــیافزارها شناخت بیشتری را
+          برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان
+          فارسی ایجاد کرد . تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+          ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+          آینده، شناخت فراوان جامعه و متخصصان را می طلبد ، تا با
+          نـــــــــــــرم لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+          چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+          مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلــــــی
+        </p>
+        <button class="second-section-button-2">تماس با ما</button>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container-1">
+        <span class="footer-title-1"> با خیال راحت خرید کنید </span>
+        <div class="footer-container-2">
+          <div class="footer-item-1-container-1">
+            <img
+              class="footer-item-1-icon"
+              src="../../src/assets/icons/card-pos.svg"
+              alt=""
+            />
+            <div class="footer-item-1-container-2">
+              <span class="footer-item-1-span-1"> روش پرداخت </span>
+              <span class="footer-item-1-span-2"> کلیه کارت های شتاب </span>
+            </div>
+          </div>
+          <div class="footer-item-1-container-1">
+            <img
+              class="footer-item-1-icon"
+              src="../../src/assets/icons/box-tick.svg"
+              alt=""
+            />
+            <div class="footer-item-1-container-2">
+              <span class="footer-item-1-span-1"> پست رایگان </span>
+              <span class="footer-item-1-span-2">
+                خرید بالای 100 هزار تومان
+              </span>
+            </div>
+          </div>
+          <div class="footer-item-1-container-1">
+            <img
+              class="footer-item-1-icon"
+              src="../../src/assets/icons/box-tick.svg"
+              alt=""
+            />
+            <div class="footer-item-1-container-2">
+              <span class="footer-item-1-span-1"> پست رایگان </span>
+              <span class="footer-item-1-span-2">
+                خرید بالای 100 هزار تومان
+              </span>
+            </div>
+          </div>
+          <div class="footer-item-1-container-1">
+            <img
+              class="footer-item-1-icon"
+              src="../../src/assets/icons/card-pos.svg"
+              alt=""
+            />
+            <div class="footer-item-1-container-2">
+              <span class="footer-item-1-span-1"> روش پرداخت </span>
+              <span class="footer-item-1-span-2"> کلیه کارت های شتاب </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container-3">
+        <div class="footer-container-4">
+          <div class="footer-container-5">
+            <img
+              class="footer-image-1"
+              src="../../src/assets/images/Layer-7.png"
+              alt=""
+            />
+            <div class="footer-container-6">
+              <span class="footer-title-2"> حیـات <span>سـبــز</span> </span>
+              <span class="footer-title-3">
+                بزرگترین شرکت فروش کود در ایران
+              </span>
+            </div>
+          </div>
+          <div class="footer-container-7">
+            <span class="footer-span-1">
+              شیراز بعد از پل صنایع، شهرک باهنر کوچه 23 فروشگاه بزرگ حیات سبز
+            </span>
+            <span class="footer-span-2">
+              تلفن تماس
+              <span class="footer-span-3"> 4566 123 0917 - 2233 421 0713 </span>
+            </span>
+          </div>
+        </div>
+        <div class="footer-line-1"></div>
+        <div class="footer-container-8">
+          <div class="footer-container-9">
+            <div class="footer-item-2-container-1">
+              <span class="footer-item-2-title"> دسترسی سریع </span>
+              <ul class="footer-item-2-ul">
+                <li class="footer-item-2-li">تماس با ما</li>
+                <li class="footer-item-2-li">راهنمای خرید</li>
+                <li class="footer-item-2-li">پیگیری سفارش</li>
+              </ul>
+            </div>
+            <div class="footer-item-2-container-1">
+              <span class="footer-item-2-title"> پرسش و پاسخ </span>
+              <ul class="footer-item-2-ul">
+                <li class="footer-item-2-li">تماس با ما</li>
+                <li class="footer-item-2-li">راهنمای خرید</li>
+                <li class="footer-item-2-li">پیگیری سفارش</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-line-1"></div>
+          <div class="footer-container-10">
+            <span class="footer-title-4">مجوز ها</span>
+            <span class="footer-span-4">نماد اعتماد و مجوز صنعت معدن</span>
+            <img
+              class="footer-image-2"
+              src="../../src/assets/images/logo-anjooman-senfi%201.png"
+              alt=""
+            />
+            <img
+              class="footer-image-2"
+              src="../../src/assets/images/samandehi-for-poponik%201.png"
+              alt=""
+            />
+            <img
+              class="footer-image-2"
+              src="../../src/assets/images/1-min-6-250x230%201.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer-container-11">
+        تمام حقوق متعلق به شرکت حیات سبز میباشد
+      </div>
+    </footer>
+    <script rel="preload" async src="../../src/utility/breakpoints.js"></script>
+    <script rel="preload" async src="script.js"></script>
+    <script rel="preload" async src="../../src/js/script.js"></script>
+    <script
+      rel="preload"
+      async
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/488d7f94e4.js"
+    ></script>
+    <script
+      rel="preload"
+      async
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

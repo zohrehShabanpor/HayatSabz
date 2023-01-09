@@ -69,17 +69,17 @@
   column-gap: 10px;
 }
 
+.checkbox-img {
+  width: 21px;
+  height: 21px;
+}
+
 .second-section-span-1 {
   display: block;
   width: 12px;
   height: 12px;
 
   background: #7bc74d;
-}
-
-.checkbox-img {
-  width: 21px;
-  height: 21px;
 }
 
 @media screen and (max-width: 992px) {
