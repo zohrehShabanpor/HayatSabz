@@ -414,6 +414,10 @@
   display: none;
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1400px) {
   .second-section-container-2 {
     height: 440px;
@@ -930,6 +934,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .mobile {
+    display: block;
+  }
+
   .second-section {
     padding: 0 40px;
     margin-top: 60px;
@@ -1167,6 +1175,9 @@
   .seventh-section-container-2 {
     padding: 0 30px 75px;
     margin-top: 35px !important;
+    flex-direction: row;
+    overflow-x: scroll;
+    border-radius: 0;
   }
 
   .seventh-section-title-1 {
@@ -1180,14 +1191,17 @@
   .seventh-section-item-container-1 {
     flex-direction: column;
     padding: 0;
-    z-index: -4;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+    box-shadow: none;
+    border-radius: 12px;
+
+    width: 156px;
+    height: 161px;
+    flex-shrink: 0;
   }
 
-  .seventh-section-item-container-1:nth-child(even)
-    .seventh-section-item-image {
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+  .seventh-section-item-container-3 {
+    width: 100%;
+    height: 100%;
   }
 
   .seventh-section-item-title {
@@ -1209,17 +1223,45 @@
 
   .seventh-section-item-image {
     width: 100%;
-    z-index: -3;
-    border-radius: 0;
-    height: 200px;
+    height: 100%;
+    border-radius: 12px;
   }
 
-  .seventh-section-item-image-2 {
-    display: block;
+  .seventh-section-container-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 64.55%, #000000 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 8px 12px;
   }
 
-  .seventh-section-item-image-3 {
-    display: block;
+  .seventh-section-container-3 span {
+    font-weight: 950;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .seventh-section-button-1 {
+    border: none;
+    outline: none;
+    padding: 6px 16px;
+    background: #7bc74d;
+    border-radius: 53px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: 15px;
+  }
+
+  .ninth-section {
+    margin: 38px -65px 48px 0;
+  }
+
+  .seventh-section-container-4 {
+    display: none;
   }
 
   .fifth-section,
@@ -1236,7 +1278,10 @@
   }
 
   .second-section-button-2 img,
-  .seventh-section-item-button img {
+  .seventh-section-item-button img,
+  .seventh-section-item-container-2,
+  .seventh-section-item-image-2,
+  .seventh-section-item-image-3 {
     display: none;
   }
 }

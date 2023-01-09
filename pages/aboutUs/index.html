@@ -514,6 +514,12 @@
     </style>
     <link
       rel="preload"
+      href="../../src/css/elements.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
       href="style.css"
       as="style"
       onload="this.rel='stylesheet'"
@@ -546,11 +552,58 @@
         src="../../src/assets/images/Rectangle%2022.png"
         alt=""
       />
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <img
+            class="offcanvas-image-1"
+            src="../../src/assets/images/Layer-7.png"
+          />
+          <span class="offcanvas-span-1">
+            حیات
+            <span>سبز</span>
+          </span>
+          <span class="offcanvas-span-2" data-bs-dismiss="offcanvas">+</span>
+        </div>
+        <div class="offcanvas-div-1">
+          <a href="../../index.html">صفحه اصلی</a>
+          <a href="../product/index.html">محصولات</a>
+          <div
+            class="offcanvas-div-2"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+          >
+            <span>دسته بندی</span>
+            <img src="../../src/assets/icons/arrow-down.svg" />
+          </div>
+          <div class="collapse offcanvas-collapse" id="collapseExample">
+            <a>- کود معدنی</a>
+            <a>- کود معدنی</a>
+            <a>- کود معدنی</a>
+          </div>
+          <a class="active" href="./index.html">درباره ما</a>
+          <a href="../contactUs/index.html">تماس با ما</a>
+          <div class="offcanvas-div-3">
+            <span>
+              حیات
+              <span>سبز</span>
+            </span>
+          </div>
+        </div>
+      </div>
       <nav id="nav">
         <div class="header-container-1">
           <img
             class="header-icon-5"
             src="../../src/assets/icons/mobile-Menu.svg"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
             alt=""
           />
           <img
